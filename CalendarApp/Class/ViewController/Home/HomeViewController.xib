@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CalendarApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainer" destination="MuZ-VD-f4d" id="CxQ-1v-x6u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2x-9C-kqW">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oP4-u9-A2o">
+                            <rect key="frame" x="942" y="27.5" width="45" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="Tb1-bq-KZ1"/>
+                                <constraint firstAttribute="height" constant="45" id="dsJ-2o-Nvi"/>
+                            </constraints>
+                            <state key="normal" image="imgpsh_fullsize_anim"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lịch họp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpF-VJ-Oij">
+                            <rect key="frame" x="28" y="32" width="119.5" height="36"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RLx-z2-XGk">
+                            <rect key="frame" x="402" y="34.5" width="220" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="220" id="yRs-99-nZk"/>
+                            </constraints>
+                            <segments>
+                                <segment title="Ngày"/>
+                                <segment title="Tháng"/>
+                            </segments>
+                            <connections>
+                                <action selector="selectedSegment:" destination="-1" eventType="valueChanged" id="5B1-Er-6lK"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1100249663" green="0.14831173419999999" blue="0.18872836230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="RLx-z2-XGk" firstAttribute="centerY" secondItem="y2x-9C-kqW" secondAttribute="centerY" id="01h-JK-s9t"/>
+                        <constraint firstAttribute="height" constant="100" id="9ff-sD-Cdj"/>
+                        <constraint firstItem="oP4-u9-A2o" firstAttribute="centerY" secondItem="y2x-9C-kqW" secondAttribute="centerY" id="Huh-NI-crr"/>
+                        <constraint firstItem="RLx-z2-XGk" firstAttribute="centerX" secondItem="y2x-9C-kqW" secondAttribute="centerX" id="U2C-yd-zTX"/>
+                        <constraint firstItem="jpF-VJ-Oij" firstAttribute="leading" secondItem="y2x-9C-kqW" secondAttribute="leading" constant="28" id="Zfp-GA-uVe"/>
+                        <constraint firstAttribute="trailing" secondItem="oP4-u9-A2o" secondAttribute="trailing" constant="37" id="Zug-m6-oft"/>
+                        <constraint firstItem="jpF-VJ-Oij" firstAttribute="top" secondItem="y2x-9C-kqW" secondAttribute="top" constant="32" id="bpW-xi-Yvu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MuZ-VD-f4d">
+                    <rect key="frame" x="0.0" y="102" width="1024" height="666"/>
+                    <color key="backgroundColor" red="0.12549552319999999" green="0.16820439700000001" blue="0.2174127102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="y2x-9C-kqW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="C6c-B2-bCb"/>
+                <constraint firstItem="MuZ-VD-f4d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cJz-N1-V9v"/>
+                <constraint firstAttribute="bottom" secondItem="MuZ-VD-f4d" secondAttribute="bottom" id="dza-YF-tea"/>
+                <constraint firstAttribute="trailing" secondItem="MuZ-VD-f4d" secondAttribute="trailing" id="gef-80-ZQY"/>
+                <constraint firstAttribute="trailing" secondItem="y2x-9C-kqW" secondAttribute="trailing" id="kq6-7Q-8dd"/>
+                <constraint firstItem="y2x-9C-kqW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kyh-7S-kdY"/>
+                <constraint firstItem="MuZ-VD-f4d" firstAttribute="top" secondItem="y2x-9C-kqW" secondAttribute="bottom" constant="2" id="tGX-NW-EiZ"/>
+            </constraints>
+            <point key="canvasLocation" x="33" y="-54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgpsh_fullsize_anim" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
