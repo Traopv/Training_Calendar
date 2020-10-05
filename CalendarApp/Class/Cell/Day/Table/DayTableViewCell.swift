@@ -2,7 +2,7 @@
 //  DayTableViewCell.swift
 //  CalendarApp
 //
-//  Created by Apple on 9/30/20.
+//  Created by Apple on 10/5/20.
 //
 
 import UIKit
@@ -13,19 +13,17 @@ class DayTableViewCell: UITableViewCell {
     @IBOutlet weak var lbHour: UILabel!
     @IBOutlet weak var lbType: UILabel!
     @IBOutlet weak var lbTitle: UILabel!
-    var arrEvent: [Event] = [Event]()
     override func awakeFromNib() {
-        super.awakeFromNib()    }
+        super.awakeFromNib()
+        // Initialization code
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    //MARK:-
-    //MARK: ConFig
+    //MARK:
+    //MARK: conFig
     func conFig(){
-        lbDay.layer.cornerRadius = 5
-        lbDay.layer.masksToBounds = true
-        lbHour.layer.cornerRadius = 5
-        lbHour.layer.masksToBounds = true
+        
     }
 }

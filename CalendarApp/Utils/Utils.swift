@@ -56,7 +56,6 @@ class Utils: NSObject {
             //load dữ liệu tháng trước đó vào mảng
             let firstMonth = allDaysInMonth[0]
             let dayInWeek = firstMonth.dayOfWeek()
-            
             // nếu tháng hiện tại là tháng 1
             if date.month == 1 {
                 

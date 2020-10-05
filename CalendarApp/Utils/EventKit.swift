@@ -24,6 +24,44 @@ class EventKit {
             }
         return arr
     }
+    
+    static func checkCalendarPermission() -> Bool{
+        switch EKEventStore.authorizationStatus(for: .event) {
+        case .authorized:
+            print("Authorized")
+            return true
+        case .denied:
+            print("Access denied")
+            requestCalendarPermission()
+        case .notDetermined:
+           requestCalendarPermission()
+            print("Not Determined")
+        default:
+            print("Case Default")
+        }
+        return false
+    }
+    
+    static func requestCalendarPermission(){
+        let eventStore = EKEventStore()
+        eventStore.requestAccess(to: .event, completion:
+            {(granted: Bool, error: Error?) -> Void in
+                if granted {
+                    let nc = NotificationCenter.default
+                    nc.post(name: Notification.Name("CalendarAuthorized"), object: nil)
+                } else {
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+//                        let  permissionView : Permission = Permission().fromNib(nibName: "permissionView", index: 0) as! Permission
+//                        let klc = KLCPopup.init(contentView: permissionView)
+//                        klc?.showType = .bounceInFromLeft
+//                        klc?.dismissType = .bounceOutToTop
+//                        klc?.maskType = .dimmed
+//                        klc?.shouldDismissOnBackgroundTouch = true
+//                        klc?.show()
+//                    }
+                }
+        })
+    }
 
     static func requestAccessToCalendar() {
         let eventStore = EKEventStore()

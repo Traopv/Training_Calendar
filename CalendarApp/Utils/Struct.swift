@@ -9,6 +9,16 @@
 import Foundation
 
 // MARK: - Datum
+struct Data {
+    let startDate : Date
+    let endDate : Date
+    let title : String
+    init(startDate: Date,endDate: Date,title : String) {
+        self.startDate = startDate
+        self.endDate = endDate
+        self.title = title
+    }
+}
 struct EventDay: Codable {
     let date: Date
     let event: [Event]
@@ -21,11 +31,8 @@ struct EventDay: Codable {
 
 // MARK: - Event
 struct Event: Codable {
-    let hours : String
-    let activiti: String
-    
-    init(hours : String, activiti: String) {
-        self.hours = hours
-        self.activiti = activiti
+    let title : String
+    init(title : String) {
+        self.title = title
     }
 }

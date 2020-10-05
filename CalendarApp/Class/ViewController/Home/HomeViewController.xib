@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CalendarApp" customModuleProvider="target">
             <connections>
+                <outlet property="mySegment" destination="RLx-z2-XGk" id="XWE-Ka-Mtw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewContainer" destination="MuZ-VD-f4d" id="CxQ-1v-x6u"/>
             </connections>
@@ -31,13 +32,14 @@
                             <state key="normal" image="imgpsh_fullsize_anim"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lịch họp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpF-VJ-Oij">
-                            <rect key="frame" x="28" y="32" width="119.5" height="36"/>
+                            <rect key="frame" x="28" y="32" width="119" height="36"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RLx-z2-XGk">
                             <rect key="frame" x="402" y="34.5" width="220" height="32"/>
+                            <color key="backgroundColor" red="0.21674785020000001" green="0.28670871260000003" blue="0.35843372340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="220" id="yRs-99-nZk"/>
                             </constraints>
@@ -45,6 +47,8 @@
                                 <segment title="Ngày"/>
                                 <segment title="Tháng"/>
                             </segments>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="selectedSegmentTintColor" red="0.12549552319999999" green="0.16820439700000001" blue="0.2174127102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="selectedSegment:" destination="-1" eventType="valueChanged" id="5B1-Er-6lK"/>
                             </connections>
@@ -76,7 +80,7 @@
                 <constraint firstItem="y2x-9C-kqW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kyh-7S-kdY"/>
                 <constraint firstItem="MuZ-VD-f4d" firstAttribute="top" secondItem="y2x-9C-kqW" secondAttribute="bottom" constant="2" id="tGX-NW-EiZ"/>
             </constraints>
-            <point key="canvasLocation" x="33" y="-54"/>
+            <point key="canvasLocation" x="5" y="-99"/>
         </view>
     </objects>
     <resources>
