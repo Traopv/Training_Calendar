@@ -9,6 +9,7 @@ import UIKit
 
 class DayTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var viewTime: UIView!
     @IBOutlet weak var lbDay: UILabel!
     @IBOutlet weak var lbHour: UILabel!
     @IBOutlet weak var lbType: UILabel!
@@ -24,6 +25,7 @@ class DayTableViewCell: UITableViewCell {
     //MARK:
     //MARK: conFig
     func conFig(){
-        
+        viewTime.layer.cornerRadius = 4
+        viewTime.layer.masksToBounds = true
     }
 }

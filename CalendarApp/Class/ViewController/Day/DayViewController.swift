@@ -13,11 +13,19 @@ class DayViewController: UIViewController {
 
     var collectionViewFlowLayout : UICollectionViewFlowLayout!
     
+    @IBOutlet weak var lbTime: UILabel!
     @IBOutlet weak var myCollection: UICollectionView!
     @IBOutlet weak var myTable: UITableView!
     @IBOutlet weak var lbShowMonth: UILabel!
     @IBOutlet weak var btnCurrentDay: UIButton!
     @IBOutlet weak var imgCalendar: UIImageView!
+    @IBOutlet weak var lbType: UILabel!
+    @IBOutlet weak var lbCheck: UILabel!
+    @IBOutlet weak var lbUseEquipment: UILabel!
+    @IBOutlet weak var lbTitle: UILabel!
+    @IBOutlet weak var viewEvent2: UIView!
+    @IBOutlet weak var viewEvent3: UIView!
+    @IBOutlet weak var viewEvent: UIView!
     
     @IBOutlet weak var viewCollection: UIView!
     let calendarVC = CalendarVC.init()
@@ -60,31 +68,33 @@ class DayViewController: UIViewController {
         calendarVC.view.frame = CGRect(x: 0, y: 0, width: viewCollection.bounds.width, height: viewCollection.bounds.height)
         viewCollection.addSubview(calendarVC.view)
         viewCollection.bringSubviewToFront(calendarVC.view)
+        calendarVC.closureChooseDate = { (dateChoose: Date) in
+            self.selectedDate = dateChoose
+        }
         calendarVC.indexType = 0
         myTable.register(UINib.init(nibName: "DayTableViewCell", bundle: nil), forCellReuseIdentifier: "DayTableViewCell")
         imgCalendar.isHidden = true
         self.navigationController?.isNavigationBarHidden = true
-//        conFig(date: date)
         dateFormatter.dateFormat = "dd-MM-yyy HH:mm:ss"
         fetchAllData()
         let nc = NotificationCenter.default
         nc.addObserver(self, selector: #selector(handleCalendarPermissionAccessed), name: Notification.Name("CalendarAuthorized"), object: nil)
-        
+        conFig()
     }
     
     //MARK:-
     //MARK: funtion setup
-    func conFig(date : Date){
-        btnCurrentDay.layer.cornerRadius = 10
-        btnCurrentDay.layer.masksToBounds = true
-        
-        self.arrEvent = GetData.findEvent1(value: date, in: self.allData) ?? []
-        if self.arrEvent.count != 0 {
-            self.imgCalendar.isHidden = true
-            self.myTable.isHidden = false
+    func conFig(){
+        lbCheck.layer.cornerRadius = 10
+        lbCheck.layer.masksToBounds = true
+        if arrEvent.count != 0 {
+            let item = arrEvent[0]
+            lbTime.text  = "\(item.startDate.toString(dateFormat: "dd-MM-yyyy HH:mm")) - \(item.endDate.toString(dateFormat: "HH:mm"))"
+            lbTitle.text = item.title
+//            viewEvent2.isHidden = true
+//            viewEvent3.isHidden = true
         } else {
-            self.imgCalendar.isHidden = false
-            self.myTable.isHidden = true
+            //viewEvent.isHidden = true
         }
     }
     //load data
@@ -102,16 +112,16 @@ class DayViewController: UIViewController {
     }
     func fetchDayData(date: Date){
         arrEvent = GetData.findEvent1(value: date, in: self.allData) ?? []
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-        
-            if self.arrEvent.count != 0 {
-              self.imgCalendar.isHidden = true
-              self.myTable.isHidden = false
-          } else {
-              self.imgCalendar.isHidden = false
-              self.myTable.isHidden = true
-          }
-          self.myTable.reloadData()
+        if self.arrEvent.count != 0 {
+            self.imgCalendar.isHidden = true
+            self.myTable.isHidden = false
+        } else {
+            self.imgCalendar.isHidden = false
+            self.myTable.isHidden = true
+        }
+        self.myTable.reloadData()
+        //viewEvent.isHidden = false
+        conFig()
         
     }
     
@@ -140,6 +150,16 @@ extension DayViewController : UITableViewDelegate,UITableViewDataSource{
         cell.lbTitle.text = item.title
         cell.conFig()
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if arrEvent.count != 0 {
+            //viewEvent.isHidden = false
+            let item = arrEvent[indexPath.row]
+            lbTime.text  = "\(item.startDate.toString(dateFormat: "dd-MM-yyyy HH:mm")) - \(item.endDate.toString(dateFormat: "HH:mm"))"
+            lbTitle.text = item.title
+            //viewEvent2.isHidden = true
+            //viewEvent3.isHidden = true
+        }
     }
 }
 

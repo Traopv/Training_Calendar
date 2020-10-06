@@ -27,6 +27,8 @@ class CalendarVC: UIViewController {
             fetchDayData(date: selectedDate)
         }
     }
+    var closureChooseDate: ((_ date : Date) -> Void)?
+    
     var currentPage: Date {
         let offsetX = myCollection.contentOffset.x
         let index = Int(offsetX/myCollection.bounds.width)
@@ -49,7 +51,6 @@ class CalendarVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("width && height \(wieghtView), \(heightView)")
         self.view.frame = CGRect(x: 0.0, y: 0.0, width: wieghtView, height: heightView)
         let calendar = Calendar.current
         currentMonth = calendar.component(.month, from: Date())
@@ -116,6 +117,9 @@ extension CalendarVC : UICollectionViewDelegate,UICollectionViewDataSource,UIScr
         cell.indexType = indexType
         cell.arrEvent = allData
         cell.loadData()
+        cell.closureShowEvent = { (dateChoose: Date) in
+            self.closureChooseDate?(dateChoose)
+        }
         return cell
     }
     

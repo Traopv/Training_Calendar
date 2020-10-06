@@ -19,20 +19,7 @@ class CellDate: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        viewCell.layer.cornerRadius = 7
+        viewCell.layer.cornerRadius = 3
         viewCell.layer.masksToBounds = true
     }
-
-//    func chooseCell(){
-//        viewCell.backgroundColor = .red
-//    }
-//    override var isSelected: Bool {
-//        didSet {
-//            if (isSelected) {
-//                self.viewCell!.backgroundColor = .red
-//            } else {
-//                self.viewCell!.backgroundColor = .clear
-//            }
-//        }
-//    }
 }
