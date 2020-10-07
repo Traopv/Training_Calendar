@@ -12,7 +12,7 @@
 //#import "HMSegmentedControl.h"
 //#import "SVPullToRefresh.h"
 #import "KLCPopup.h"
-//#import "UIView+UpdateAutoLayoutConstraints.h"
+#import "UIView+UpdateAutoLayoutConstraints.h"
 //#import "UIViewController+KNSemiModal.h"
 //#import "THDatePickerViewController.h"
 #endif /* Bridging_Header_h */

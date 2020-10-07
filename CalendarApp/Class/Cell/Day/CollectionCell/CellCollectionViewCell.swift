@@ -49,10 +49,10 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellDate", for: indexPath) as! CellDate
         let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "DayCell", for: indexPath) as! DayCell
-        if indexType == 0 {
+        if indexType == 0 { // Cell Day
             let date = allDaysInMonth[indexPath.row] as Date
             if (currentDate.day == date.day && currentDate.month == date.month && currentDate.year == date.year){
-                cell.viewCell.backgroundColor = .red
+                cell.viewCell.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
             } else {
                 cell.viewCell.backgroundColor = .clear
             }
@@ -77,9 +77,10 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
                 cell.imgCell.isHidden = true
             }
             return cell
-        } else {
+        } else { // Cell Month
             let date = allDaysInMonth[indexPath.row] as Date
             let currentDate = Date()
+            cell1.viewCell.backgroundColor = #colorLiteral(red: 0.1052148715, green: 0.1488248706, blue: 0.1940408945, alpha: 1)
             if (currentDate.day == date.day && currentDate.month == date.month && currentDate.year == date.year){
                 cell1.lbDay.backgroundColor = .red
             } else {
@@ -115,6 +116,12 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
             filter?.forEach{item in
                 cell1.lbHour.text = item.startDate.toString(dateFormat: "HH:mm")
                 cell1.lbTitle.text = item.title
+            }
+            switch indexPath.row {
+            case 5,6,12,13,19,20,26,27,33,34,40,41:
+                cell1.viewCell.backgroundColor = #colorLiteral(red: 0.1369882524, green: 0.1872727275, blue: 0.2451083958, alpha: 1)
+            default:
+                break
             }
             return cell1
         }

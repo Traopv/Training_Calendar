@@ -11,72 +11,72 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DayCell" customModule="CalendarApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="197" height="154"/>
+            <rect key="frame" x="0.0" y="0.0" width="197" height="103"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="197" height="154"/>
+                <rect key="frame" x="0.0" y="0.0" width="197" height="103"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytx-L2-s88">
-                        <rect key="frame" x="0.5" y="0.5" width="196" height="153"/>
+                        <rect key="frame" x="0.5" y="0.5" width="196" height="102"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-filled-circle-48" translatesAutoresizingMaskIntoConstraints="NO" id="DGW-wp-zrd">
-                                <rect key="frame" x="8" y="73" width="7" height="7"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="7" id="7UX-7l-23D"/>
-                                    <constraint firstAttribute="height" constant="7" id="MGQ-1G-IzS"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E51-FP-CC5">
-                                <rect key="frame" x="133" y="1" width="54" height="54"/>
+                                <rect key="frame" x="148" y="7" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="BAa-m1-XsT"/>
-                                    <constraint firstAttribute="width" constant="54" id="Ukg-SD-FZl"/>
+                                    <constraint firstAttribute="height" constant="40" id="BAa-m1-XsT"/>
+                                    <constraint firstAttribute="width" constant="40" id="Ukg-SD-FZl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="iBQ-n3-e7K">
-                                <rect key="frame" x="31" y="68" width="145" height="17"/>
+                                <rect key="frame" x="34" y="55" width="145" height="14.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hom nay ngay 06-10 Hom nay ngay 06-10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1C-CL-hWk">
-                                        <rect key="frame" x="0.0" y="0.0" width="87" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="08:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0R-Vk-OJH">
-                                        <rect key="frame" x="106" y="0.0" width="39" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <rect key="frame" x="111" y="0.0" width="34" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-filled-circle-48" translatesAutoresizingMaskIntoConstraints="NO" id="DGW-wp-zrd">
+                                <rect key="frame" x="8" y="58" width="7" height="7"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="7" id="7UX-7l-23D"/>
+                                    <constraint firstAttribute="height" constant="7" id="MGQ-1G-IzS"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.12549552319999999" green="0.16820439700000001" blue="0.2174127102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iBQ-n3-e7K" firstAttribute="centerY" secondItem="ytx-L2-s88" secondAttribute="centerY" id="5Ue-Hd-qwf"/>
-                            <constraint firstAttribute="trailing" secondItem="E51-FP-CC5" secondAttribute="trailing" constant="9" id="8tH-Eb-fu0"/>
-                            <constraint firstItem="DGW-wp-zrd" firstAttribute="centerY" secondItem="ytx-L2-s88" secondAttribute="centerY" id="WCH-pc-N45"/>
+                            <constraint firstAttribute="trailing" secondItem="E51-FP-CC5" secondAttribute="trailing" constant="8" id="8tH-Eb-fu0"/>
+                            <constraint firstItem="iBQ-n3-e7K" firstAttribute="top" secondItem="E51-FP-CC5" secondAttribute="bottom" constant="8" symbolic="YES" id="FoH-qL-I97"/>
                             <constraint firstItem="DGW-wp-zrd" firstAttribute="leading" secondItem="ytx-L2-s88" secondAttribute="leading" constant="8" id="Xd0-Wr-I3x"/>
-                            <constraint firstItem="E51-FP-CC5" firstAttribute="top" secondItem="ytx-L2-s88" secondAttribute="top" constant="1" id="ZXj-zf-jAx"/>
-                            <constraint firstAttribute="trailing" secondItem="iBQ-n3-e7K" secondAttribute="trailing" constant="20" id="lIY-or-NRY"/>
-                            <constraint firstItem="iBQ-n3-e7K" firstAttribute="leading" secondItem="DGW-wp-zrd" secondAttribute="trailing" constant="16" id="oMy-3n-CgD"/>
+                            <constraint firstItem="E51-FP-CC5" firstAttribute="top" secondItem="ytx-L2-s88" secondAttribute="top" constant="7" id="ZXj-zf-jAx"/>
+                            <constraint firstAttribute="trailing" secondItem="iBQ-n3-e7K" secondAttribute="trailing" constant="17" id="lIY-or-NRY"/>
+                            <constraint firstItem="iBQ-n3-e7K" firstAttribute="leading" secondItem="DGW-wp-zrd" secondAttribute="trailing" constant="19" id="oMy-3n-CgD"/>
+                            <constraint firstItem="DGW-wp-zrd" firstAttribute="top" secondItem="E51-FP-CC5" secondAttribute="bottom" constant="11" id="rOS-iW-X5p"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.21674785020000001" green="0.28670871260000003" blue="0.35843372340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ytx-L2-s88" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="0.5" id="2wN-Iw-Lye"/>
                 <constraint firstItem="ytx-L2-s88" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="0.5" id="NLQ-3S-eOg"/>
                 <constraint firstAttribute="trailing" secondItem="ytx-L2-s88" secondAttribute="trailing" constant="0.5" id="Q38-Q3-yAE"/>
                 <constraint firstAttribute="bottom" secondItem="ytx-L2-s88" secondAttribute="bottom" constant="0.5" id="w48-52-6TF"/>
             </constraints>
-            <size key="customSize" width="197" height="154"/>
+            <size key="customSize" width="197" height="157"/>
             <connections>
                 <outlet property="imgCell" destination="DGW-wp-zrd" id="a64-Kc-ciM"/>
                 <outlet property="lbDay" destination="E51-FP-CC5" id="e3G-kJ-wQ4"/>
@@ -84,7 +84,7 @@
                 <outlet property="lbTitle" destination="N1C-CL-hWk" id="Kbu-Iw-GLJ"/>
                 <outlet property="viewCell" destination="ytx-L2-s88" id="VoL-gd-o5D"/>
             </connections>
-            <point key="canvasLocation" x="-1415" y="68"/>
+            <point key="canvasLocation" x="-1273.1884057971015" y="38.504464285714285"/>
         </collectionViewCell>
     </objects>
     <resources>

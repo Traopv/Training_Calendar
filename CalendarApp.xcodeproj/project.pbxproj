@@ -16,11 +16,13 @@
 		1860CC4D252ACFCC006DD73F /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860CC4B252ACFCC006DD73F /* DayCell.swift */; };
 		1860CC4E252ACFCC006DD73F /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1860CC4C252ACFCC006DD73F /* DayCell.xib */; };
 		1860CC56252ADB92006DD73F /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860CC55252ADB92006DD73F /* KLCPopup.m */; };
-		1860CC5A252ADCAA006DD73F /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860CC59252ADCAA006DD73F /* Permission.swift */; };
-		1860CC5E252ADCB3006DD73F /* Permission.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1860CC5D252ADCB3006DD73F /* Permission.xib */; };
 		187D75612522DDBA00A940EA /* EventKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D75602522DDBA00A940EA /* EventKit.swift */; };
 		18AE1C21252B2AAE0059EC18 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE1C1F252B2AAE0059EC18 /* DayTableViewCell.swift */; };
 		18AE1C22252B2AAE0059EC18 /* DayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AE1C20252B2AAE0059EC18 /* DayTableViewCell.xib */; };
+		18B0D970252DA568009608FD /* PerssionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0D96E252DA568009608FD /* PerssionView.swift */; };
+		18B0D971252DA568009608FD /* PerssionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B0D96F252DA568009608FD /* PerssionView.xib */; };
+		18B0D976252DB2EA009608FD /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0D974252DB2EA009608FD /* DocumentCell.swift */; };
+		18B0D977252DB2EA009608FD /* DocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B0D975252DB2EA009608FD /* DocumentCell.xib */; };
 		18BA4D6925245FD700D3E357 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BA4D6725245FD700D3E357 /* HomeViewController.xib */; };
 		18BA4D6A25245FD700D3E357 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA4D6825245FD700D3E357 /* HomeViewController.swift */; };
 		18BA4D702524602C00D3E357 /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA4D6E2524602C00D3E357 /* MonthViewController.swift */; };
@@ -31,6 +33,7 @@
 		18BA4D912524690D00D3E357 /* CellDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA4D8D2524690D00D3E357 /* CellDate.swift */; };
 		18BA4D922524690D00D3E357 /* CellDate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BA4D8E2524690D00D3E357 /* CellDate.xib */; };
 		18BA4D932524690D00D3E357 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA4D8F2524690D00D3E357 /* CellCollectionViewCell.swift */; };
+		18EF12FA252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF12F8252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.m */; };
 		18F0E9EF25219A960031DB29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0E9EE25219A960031DB29 /* AppDelegate.swift */; };
 		18F0E9F325219A960031DB29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0E9F225219A960031DB29 /* ViewController.swift */; };
 		18F0E9F625219A960031DB29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F0E9F425219A960031DB29 /* Main.storyboard */; };
@@ -56,11 +59,13 @@
 		1860CC4C252ACFCC006DD73F /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
 		1860CC54252ADB92006DD73F /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
 		1860CC55252ADB92006DD73F /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
-		1860CC59252ADCAA006DD73F /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
-		1860CC5D252ADCB3006DD73F /* Permission.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Permission.xib; sourceTree = "<group>"; };
 		187D75602522DDBA00A940EA /* EventKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventKit.swift; sourceTree = "<group>"; };
 		18AE1C1F252B2AAE0059EC18 /* DayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
 		18AE1C20252B2AAE0059EC18 /* DayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayTableViewCell.xib; sourceTree = "<group>"; };
+		18B0D96E252DA568009608FD /* PerssionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerssionView.swift; sourceTree = "<group>"; };
+		18B0D96F252DA568009608FD /* PerssionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerssionView.xib; sourceTree = "<group>"; };
+		18B0D974252DB2EA009608FD /* DocumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
+		18B0D975252DB2EA009608FD /* DocumentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentCell.xib; sourceTree = "<group>"; };
 		18BA4D6725245FD700D3E357 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		18BA4D6825245FD700D3E357 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18BA4D6E2524602C00D3E357 /* MonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +76,8 @@
 		18BA4D8D2524690D00D3E357 /* CellDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDate.swift; sourceTree = "<group>"; };
 		18BA4D8E2524690D00D3E357 /* CellDate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellDate.xib; sourceTree = "<group>"; };
 		18BA4D8F2524690D00D3E357 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
+		18EF12F8252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UpdateAutoLayoutConstraints.m"; sourceTree = "<group>"; };
+		18EF12F9252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UpdateAutoLayoutConstraints.h"; sourceTree = "<group>"; };
 		18F0E9EB25219A960031DB29 /* CalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F0E9EE25219A960031DB29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F0E9F225219A960031DB29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +154,7 @@
 		1860CC52252ADB92006DD73F /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				18EF12F7252D63140052C317 /* UIView+UpdateAutoLayoutConstraints.h */,
 				1860CC53252ADB92006DD73F /* KLCPopup */,
 			);
 			path = Library;
@@ -164,9 +172,8 @@
 		1860CC58252ADB9B006DD73F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18B0D964252DA0E0009608FD /* ViewDay */,
 				182A81E2252C165A0011D7E9 /* ViewMonth */,
-				1860CC59252ADCAA006DD73F /* Permission.swift */,
-				1860CC5D252ADCB3006DD73F /* Permission.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,8 +183,27 @@
 			children = (
 				18AE1C1F252B2AAE0059EC18 /* DayTableViewCell.swift */,
 				18AE1C20252B2AAE0059EC18 /* DayTableViewCell.xib */,
+				18B0D974252DB2EA009608FD /* DocumentCell.swift */,
+				18B0D975252DB2EA009608FD /* DocumentCell.xib */,
 			);
 			path = Table;
+			sourceTree = "<group>";
+		};
+		18B0D964252DA0E0009608FD /* ViewDay */ = {
+			isa = PBXGroup;
+			children = (
+				18B0D965252DA0E7009608FD /* Perssion */,
+			);
+			path = ViewDay;
+			sourceTree = "<group>";
+		};
+		18B0D965252DA0E7009608FD /* Perssion */ = {
+			isa = PBXGroup;
+			children = (
+				18B0D96E252DA568009608FD /* PerssionView.swift */,
+				18B0D96F252DA568009608FD /* PerssionView.xib */,
+			);
+			path = Perssion;
 			sourceTree = "<group>";
 		};
 		18BA4D6625245FD700D3E357 /* Home */ = {
@@ -236,6 +262,15 @@
 			path = CollectionCell;
 			sourceTree = "<group>";
 		};
+		18EF12F7252D63140052C317 /* UIView+UpdateAutoLayoutConstraints.h */ = {
+			isa = PBXGroup;
+			children = (
+				18EF12F9252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.h */,
+				18EF12F8252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.m */,
+			);
+			path = "UIView+UpdateAutoLayoutConstraints.h";
+			sourceTree = "<group>";
+		};
 		18F0E9E225219A960031DB29 = {
 			isa = PBXGroup;
 			children = (
@@ -255,9 +290,9 @@
 		18F0E9ED25219A960031DB29 /* CalendarApp */ = {
 			isa = PBXGroup;
 			children = (
-				1860CC52252ADB92006DD73F /* Library */,
 				18F0EA1E25219D170031DB29 /* Bridging-Header.h */,
 				18F0E9EE25219A960031DB29 /* AppDelegate.swift */,
+				1860CC52252ADB92006DD73F /* Library */,
 				18F0EA2325219D680031DB29 /* Class */,
 				18F0EA0C25219C5C0031DB29 /* Utils */,
 				18F0EA1825219CD30031DB29 /* CommonLib */,
@@ -378,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B0D977252DB2EA009608FD /* DocumentCell.xib in Resources */,
 				182A81EC252C17280011D7E9 /* CellDetailMonth.xib in Resources */,
 				18F0E9FB25219A980031DB29 /* LaunchScreen.storyboard in Resources */,
 				18BA4D84252468D900D3E357 /* DayViewController.xib in Resources */,
@@ -387,12 +423,12 @@
 				18AE1C22252B2AAE0059EC18 /* DayTableViewCell.xib in Resources */,
 				18F0E9F625219A960031DB29 /* Main.storyboard in Resources */,
 				182A81E5252C165A0011D7E9 /* DetailMonth.xib in Resources */,
-				1860CC5E252ADCB3006DD73F /* Permission.xib in Resources */,
 				1860CC46252AB7E5006DD73F /* CalendarVC.xib in Resources */,
 				18F0EA1F25219D170031DB29 /* Event.json in Resources */,
 				18BA4D712524602C00D3E357 /* MonthViewController.xib in Resources */,
 				1860CC4E252ACFCC006DD73F /* DayCell.xib in Resources */,
 				18BA4D6925245FD700D3E357 /* HomeViewController.xib in Resources */,
+				18B0D971252DA568009608FD /* PerssionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,13 +443,15 @@
 				18BA4D912524690D00D3E357 /* CellDate.swift in Sources */,
 				182A81EB252C17280011D7E9 /* CellDetailMonth.swift in Sources */,
 				18F0E9F325219A960031DB29 /* ViewController.swift in Sources */,
+				18B0D976252DB2EA009608FD /* DocumentCell.swift in Sources */,
 				1860CC56252ADB92006DD73F /* KLCPopup.m in Sources */,
 				18BA4D6A25245FD700D3E357 /* HomeViewController.swift in Sources */,
 				182A81E6252C165A0011D7E9 /* DetailMonth.swift in Sources */,
-				1860CC5A252ADCAA006DD73F /* Permission.swift in Sources */,
 				18F0EA1425219C5C0031DB29 /* ExtensionDate.swift in Sources */,
 				18F0EA1225219C5C0031DB29 /* ExtensionCalendar.swift in Sources */,
 				18F0EA1525219C5C0031DB29 /* Utils.swift in Sources */,
+				18B0D970252DA568009608FD /* PerssionView.swift in Sources */,
+				18EF12FA252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.m in Sources */,
 				1860CC4D252ACFCC006DD73F /* DayCell.swift in Sources */,
 				18F0EA1625219C5C0031DB29 /* Struct.swift in Sources */,
 				18BA4D932524690D00D3E357 /* CellCollectionViewCell.swift in Sources */,
@@ -580,7 +618,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = demo.abc.CalendarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/Git/Training_Calendar/CalendarApp/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/ULife/Training_Calendar/CalendarApp/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -601,7 +639,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = demo.abc.CalendarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/Git/Training_Calendar/CalendarApp/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/ULife/Training_Calendar/CalendarApp/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
