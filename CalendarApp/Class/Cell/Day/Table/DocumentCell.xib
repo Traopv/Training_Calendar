@@ -40,11 +40,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="imgCell" destination="KI7-rg-PBT" id="gsR-nh-MkJ"/>
                 <outlet property="lbTitle" destination="lIH-RS-hzg" id="X2G-pw-2d6"/>
             </connections>
-            <point key="canvasLocation" x="41.304347826086961" y="162.38839285714286"/>
+            <point key="canvasLocation" x="-401" y="41"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -69,7 +69,7 @@
                 <constraint firstItem="y2x-9C-kqW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kyh-7S-kdY"/>
                 <constraint firstItem="MuZ-VD-f4d" firstAttribute="top" secondItem="y2x-9C-kqW" secondAttribute="bottom" constant="1" id="tGX-NW-EiZ"/>
             </constraints>
-            <point key="canvasLocation" x="4.6875" y="-99.21875"/>
+            <point key="canvasLocation" x="177" y="150"/>
         </view>
     </objects>
 </document>

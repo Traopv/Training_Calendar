@@ -10,7 +10,9 @@ import UIKit
 class MonthViewController: UIViewController {
 
     @IBOutlet weak var viewCollection: UIView!
+    
     let viewCal = CalendarVC.init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewCal.wieghtView = Double(viewCollection.bounds.width)

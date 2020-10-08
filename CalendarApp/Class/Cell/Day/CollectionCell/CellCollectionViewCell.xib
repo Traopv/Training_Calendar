@@ -43,7 +43,7 @@
             <connections>
                 <outlet property="myCollection" destination="ewI-MZ-48a" id="Awi-3D-p8O"/>
             </connections>
-            <point key="canvasLocation" x="156" y="101"/>
+            <point key="canvasLocation" x="307" y="114"/>
         </collectionViewCell>
     </objects>
 </document>

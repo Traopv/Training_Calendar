@@ -25,6 +25,7 @@ class CalendarVC: UIViewController {
     {
         didSet{
             fetchDayData(date: selectedDate)
+            //myCollection.reloadData()
         }
     }
     var closureChooseDate: ((_ date : Date) -> Void)?
@@ -65,6 +66,7 @@ class CalendarVC: UIViewController {
         fetchAllData()
         let nc = NotificationCenter.default
         nc.addObserver(self, selector: #selector(handleCalendarPermissionAccessed), name: Notification.Name("CalendarAuthorized"), object: nil)
+        btnCurrentDay.isHidden = true
     }
     
     //MARK:-
@@ -110,7 +112,9 @@ extension CalendarVC : UICollectionViewDelegate,UICollectionViewDataSource,UIScr
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellCollectionViewCell", for: indexPath) as! CellCollectionViewCell
+        //cell.myCollection.reloadData()
         let date    = listMonth[indexPath.row]
         cell.month  = date.month
         cell.year   = date.year
@@ -119,6 +123,9 @@ extension CalendarVC : UICollectionViewDelegate,UICollectionViewDataSource,UIScr
         cell.loadData()
         cell.closureShowEvent = { (dateChoose: Date) in
             self.closureChooseDate?(dateChoose)
+            //collectionView.reloadData()
+            self.btnCurrentDay.isHidden = false
+            self.selectedDate = dateChoose
         }
         return cell
     }
@@ -133,7 +140,6 @@ extension CalendarVC : UICollectionViewDelegate,UICollectionViewDataSource,UIScr
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let offsetX = myCollection.contentOffset.x
-        
         if offsetX < scrollView.bounds.width {
             currentIndex = listMonth.count - 2
             print("prev index: \(currentIndex)")

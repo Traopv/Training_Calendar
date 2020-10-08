@@ -10,8 +10,9 @@ import UIKit
 
 class CellCollectionViewCell: UICollectionViewCell {
 
-    var collectionViewFlowLayout : UICollectionViewFlowLayout!
     @IBOutlet weak var myCollection: UICollectionView!
+    
+    var collectionViewFlowLayout : UICollectionViewFlowLayout!
     var allDaysInMonth : [Date] = []
     var arrEvent : [Data] = [Data]()
     let currentDate = Date()
@@ -21,6 +22,14 @@ class CellCollectionViewCell: UICollectionViewCell {
     var endOfWeek = ""
     var isShowButton = false
     var closureShowEvent: ((_ date : Date) -> Void)?
+    
+    var selectedIndex = Int()
+    var selectedDate : Date = Date()
+    {
+        didSet{
+            myCollection.reloadData()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -51,6 +60,8 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
         let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "DayCell", for: indexPath) as! DayCell
         if indexType == 0 { // Cell Day
             let date = allDaysInMonth[indexPath.row] as Date
+            cell.layer.borderWidth = 1
+            cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
             if (currentDate.day == date.day && currentDate.month == date.month && currentDate.year == date.year){
                 cell.viewCell.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
             } else {
@@ -75,6 +86,13 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
                 cell.imgCell.isHidden = false
             } else {
                 cell.imgCell.isHidden = true
+            }
+            if selectedDate.day == date.day && selectedDate.month == date.month && selectedDate.year == date.year {
+                cell.layer.borderWidth = 1
+                cell.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            } else {
+                cell.layer.borderWidth = 1
+                cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
             }
             return cell
         } else { // Cell Month
@@ -142,6 +160,7 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
             klc?.show()
         } else {
             let date = allDaysInMonth[indexPath.row] as Date
+            selectedDate = date
             closureShowEvent?(date)
         }
     }

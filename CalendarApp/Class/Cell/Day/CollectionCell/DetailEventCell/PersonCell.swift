@@ -1,13 +1,13 @@
 //
-//  PerssionView.swift
+//  PersonCell.swift
 //  CalendarApp
 //
-//  Created by Apple on 10/7/20.
+//  Created by Apple on 10/8/20.
 //
 
 import UIKit
 
-class PerssionView: UIViewController {
+class PersonCell: UICollectionViewCell {
 
     @IBOutlet weak var viewConten: UIView!
     @IBOutlet weak var lbTitle: UILabel!
@@ -17,10 +17,10 @@ class PerssionView: UIViewController {
     @IBOutlet weak var img3: UIImageView!
     @IBOutlet weak var view4: UIView!
     @IBOutlet weak var lbNumberPers: UILabel!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        conFig()
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
     }
     //MARK:-
     //MARK: ConFig

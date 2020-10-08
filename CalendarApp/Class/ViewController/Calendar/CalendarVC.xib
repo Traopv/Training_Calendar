@@ -138,7 +138,7 @@
                 <constraint firstAttribute="trailing" secondItem="FlA-Oa-akL" secondAttribute="trailing" id="Yx2-qz-GwQ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-294" y="30"/>
+            <point key="canvasLocation" x="90" y="89"/>
         </view>
     </objects>
     <resources>
