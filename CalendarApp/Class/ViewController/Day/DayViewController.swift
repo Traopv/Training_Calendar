@@ -12,30 +12,25 @@ import EventKit;
 class DayViewController: UIViewController {
     
     @IBOutlet weak var myTable: UITableView!
-    @IBOutlet weak var myTableEvent: UITableView!
     @IBOutlet weak var lbShowMonth: UILabel!
     @IBOutlet weak var btnCurrentDay: UIButton!
     @IBOutlet weak var imgCalendar: UIImageView!
     @IBOutlet weak var imgEventDetail: UIImageView!
     @IBOutlet weak var viewCollection: UIView!
+    @IBOutlet weak var viewEventDetail: UIView!
     
+    let eventMonth = EventMonth().fromNib(nibName: "EventMonth") as! EventMonth
     let calendarVC = CalendarVC.init()
     var allDaysInMonth: [Date] = []
     var arrEvent : [Data] = [Data]()
     var allData : [ Data] = [Data]()
     var arrDoc : [Int] = [Int]()
-    var arrEventDetail : Data!
-    {
-        didSet{
-            myTableEvent.reloadData()
-        }
-    }
     var selectedDate : Date = Date()
     {
         didSet{
             fetchDayData(date: selectedDate)
             if arrEvent.count != 0 {
-                arrEventDetail = arrEvent[0]
+                eventMonth.arrEventDetail = arrEvent[0]
                 myTable.reloadData()
             }
         }
@@ -45,7 +40,6 @@ class DayViewController: UIViewController {
     var currentYear : Int = 0
     var currentMonth : Int = 0
     var currentDay : Int = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,32 +55,24 @@ class DayViewController: UIViewController {
         calendarVC.closureChooseDate = { (dateChoose: Date) in
             self.selectedDate = dateChoose
         }
+        eventMonth.frame = CGRect(x: 0, y: 0, width: 803, height: 834)
+        eventMonth.conFig()
+        viewEventDetail.addSubview(eventMonth)
+        
         calendarVC.indexType = 0
         myTable.register(UINib.init(nibName: "DayTableViewCell", bundle: nil), forCellReuseIdentifier: "DayTableViewCell")
-        myTableEvent.register(UINib.init(nibName: "EventCell1", bundle: nil), forCellReuseIdentifier: "EventCell1")
-        myTableEvent.register(UINib.init(nibName: "EventCell2", bundle: nil), forCellReuseIdentifier: "EventCell2")
-        myTableEvent.register(UINib.init(nibName: "EventCell3", bundle: nil), forCellReuseIdentifier: "EventCell3")
         imgCalendar.isHidden = true
         self.navigationController?.isNavigationBarHidden = true
         fetchAllData()
         let nc = NotificationCenter.default
         nc.addObserver(self, selector: #selector(handleCalendarPermissionAccessed), name: Notification.Name("CalendarAuthorized"), object: nil)
-        conFig()
         if arrEvent.count != 0 {
-            arrEventDetail = arrEvent[0]
+            eventMonth.arrEventDetail = arrEvent[0]
         }
     }
     
     //MARK:-
     //MARK: funtion setup
-    func conFig(){
-    }
-    
-    //show Detail Event
-    func showDetailEvent(){
-        
-    }
-    
     //load data
     @objc  func handleCalendarPermissionAccessed(){
         DispatchQueue.main.async {
@@ -106,82 +92,37 @@ class DayViewController: UIViewController {
             self.imgCalendar.isHidden = true
             self.imgEventDetail.isHidden = true
             self.myTable.isHidden = false
-            self.myTableEvent.isHidden = false
-            arrEventDetail = arrEvent[0]
+            self.viewEventDetail.isHidden = false
         } else {
             self.imgCalendar.isHidden = false
             self.imgEventDetail.isHidden = false
             self.myTable.isHidden = true
-            self.myTableEvent.isHidden = true
+            self.viewEventDetail.isHidden = true
         }
         self.myTable.reloadData()
-        conFig()
-    }
-    
-    //MARK:-
-    //MARK: Button function
-    @IBAction func btnCurrentDay(_ sender: Any) {
     }
 }
 
 //MARK:-
 extension DayViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var countArr = 0
-        if tableView == self.myTable {
-            countArr = arrEvent.count
-        }
-        if tableView == self.myTableEvent {
-            countArr =  3
-        }
-        return countArr
+        return arrEvent.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tableView == self.myTable {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "DayTableViewCell", for: indexPath) as! DayTableViewCell
-            let item = arrEvent[indexPath.row]
-            cell.lbDay.text = item.startDate.toString(dateFormat: "dd/MM")
-            cell.lbHour.text = item.startDate.toString(dateFormat: "HH:mm")
-            cell.lbTitle.text = item.title
-            cell.conFig()
-            return cell
-       } else if tableView == self.myTableEvent {
-            switch indexPath.row {
-                case 0:
-                    let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell1", for: indexPath) as! EventCell1
-                    cell.conFig()
-                    if arrEventDetail != nil {
-                        let item = arrEventDetail
-                        cell.lbTime.text = "\(item!.startDate.toString(dateFormat: "dd-MM-yyyy HH:mm")) - \(item!.endDate.toString(dateFormat: "HH:mm"))"
-                        cell.lbTitle.text = item?.title
-                    }
-                    return cell
-                case 1:
-                    let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell2", for: indexPath) as! EventCell2
-                    cell.numberPers = 4
-                    cell.conFig()
-                    return cell
-                case 2:
-                    let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell3", for: indexPath) as! EventCell3
-                    cell.numberDocs = 3
-                    cell.conFig()
-                    return cell
-                default:
-                    break
-            }
-            return UITableViewCell.init()
-       }
-       return UITableViewCell.init()
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DayTableViewCell", for: indexPath) as! DayTableViewCell
+        let item = arrEvent[indexPath.row]
+        cell.lbDay.text = item.startDate.toString(dateFormat: "dd/MM")
+        cell.lbHour.text = item.startDate.toString(dateFormat: "HH:mm")
+        cell.lbTitle.text = item.title
+        cell.conFig()
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if tableView == self.myTable {
-            if arrEvent.count != 0 {
-                arrEventDetail = arrEvent[indexPath.row]
-                myTableEvent.reloadData()
-            }
+        if arrEvent.count != 0 {
+            eventMonth.arrEventDetail = arrEvent[indexPath.row]
+            eventMonth.myTable.reloadData()
         }
     }
 }

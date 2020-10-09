@@ -50,11 +50,12 @@ extension DayCell : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let  eventMonth : EventMonth = EventMonth().fromNib(nibName: "EventMonth", index: 0) as! EventMonth
         eventMonth.conFig()
+        eventMonth.arrEventDetail = arrEvent[indexPath.row]
         eventMonth.layer.cornerRadius = 15
         eventMonth.layer.masksToBounds = true
         let klc = KLCPopup.init(contentView: eventMonth)
-        klc?.showType = .bounceInFromLeft
-        klc?.dismissType = .bounceOutToTop
+        klc?.showType = .fadeIn
+        klc?.dismissType = .shrinkOut
         klc?.maskType = .dimmed
         klc?.shouldDismissOnBackgroundTouch = true
         klc?.show()

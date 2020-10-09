@@ -41,7 +41,7 @@
                     <view contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="oFF-fp-n5v">
                         <rect key="frame" x="0.0" y="65" width="803" height="269"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-clock-50" translatesAutoresizingMaskIntoConstraints="NO" id="6tV-74-jdJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock-2 1" translatesAutoresizingMaskIntoConstraints="NO" id="6tV-74-jdJ">
                                 <rect key="frame" x="22" y="6" width="17" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="17" id="LDC-X9-bLK"/>
@@ -54,7 +54,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-menu-50" translatesAutoresizingMaskIntoConstraints="NO" id="Cix-vW-bUZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 210" translatesAutoresizingMaskIntoConstraints="NO" id="Cix-vW-bUZ">
                                 <rect key="frame" x="22" y="52" width="17" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="17" id="UWK-pQ-i4P"/>
@@ -67,7 +67,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-statistics-100" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-6F-HlN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="proẹctor" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-6F-HlN">
                                 <rect key="frame" x="20" y="98" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="AMx-l2-ioN"/>
@@ -80,7 +80,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-phone-contact-50 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="9Mh-aK-njv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact-phone 1" translatesAutoresizingMaskIntoConstraints="NO" id="9Mh-aK-njv">
                                 <rect key="frame" x="22" y="149" width="17" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="1FH-V3-HMj"/>
@@ -162,14 +162,14 @@
                 <outlet property="lbType" destination="QHb-x0-vmw" id="SYg-x5-XvZ"/>
                 <outlet property="lbUseDevice" destination="p5Q-rS-zpu" id="dc1-WE-srp"/>
             </connections>
-            <point key="canvasLocation" x="-175" y="91"/>
+            <point key="canvasLocation" x="415" y="89"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="icons8-clock-50" width="50" height="50"/>
-        <image name="icons8-menu-50" width="50" height="50"/>
-        <image name="icons8-phone-contact-50 (1)" width="50" height="50"/>
-        <image name="icons8-statistics-100" width="100" height="100"/>
+        <image name="Group 210" width="21" height="15"/>
+        <image name="clock-2 1" width="17" height="17"/>
+        <image name="contact-phone 1" width="22" height="22"/>
+        <image name="proẹctor" width="19" height="22"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

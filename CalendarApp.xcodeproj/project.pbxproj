@@ -50,8 +50,6 @@
 		18F0EA1625219C5C0031DB29 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0EA1125219C5C0031DB29 /* Struct.swift */; };
 		18F0EA1B25219CD30031DB29 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0EA1A25219CD30031DB29 /* DateExtensions.swift */; };
 		18F0EA1F25219D170031DB29 /* Event.json in Resources */ = {isa = PBXBuildFile; fileRef = 18F0EA1D25219D170031DB29 /* Event.json */; };
-		9B6A3D5A252E0965005A3367 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6A3D59252E0965005A3367 /* PersonView.swift */; };
-		9B6A3D5C252E096F005A3367 /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6A3D5B252E096F005A3367 /* PersonView.xib */; };
 		9B6A3D62252E1EB7005A3367 /* EventCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6A3D60252E1EB7005A3367 /* EventCell1.swift */; };
 		9B6A3D63252E1EB7005A3367 /* EventCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6A3D61252E1EB7005A3367 /* EventCell1.xib */; };
 		9B6A3D66252E2008005A3367 /* EventCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6A3D64252E2008005A3367 /* EventCell2.swift */; };
@@ -109,8 +107,6 @@
 		18F0EA1A25219CD30031DB29 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		18F0EA1D25219D170031DB29 /* Event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Event.json; sourceTree = "<group>"; };
 		18F0EA1E25219D170031DB29 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		9B6A3D59252E0965005A3367 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
-		9B6A3D5B252E096F005A3367 /* PersonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		9B6A3D60252E1EB7005A3367 /* EventCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell1.swift; sourceTree = "<group>"; };
 		9B6A3D61252E1EB7005A3367 /* EventCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell1.xib; sourceTree = "<group>"; };
 		9B6A3D64252E2008005A3367 /* EventCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell2.swift; sourceTree = "<group>"; };
@@ -246,7 +242,6 @@
 		18B0D964252DA0E0009608FD /* ViewDay */ = {
 			isa = PBXGroup;
 			children = (
-				9B6A3D58252E0940005A3367 /* Person */,
 			);
 			path = ViewDay;
 			sourceTree = "<group>";
@@ -402,15 +397,6 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
-		9B6A3D58252E0940005A3367 /* Person */ = {
-			isa = PBXGroup;
-			children = (
-				9B6A3D59252E0965005A3367 /* PersonView.swift */,
-				9B6A3D5B252E096F005A3367 /* PersonView.xib */,
-			);
-			path = Person;
-			sourceTree = "<group>";
-		};
 		9B6A3D5D252E1E52005A3367 /* DetailEventCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,7 +468,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B0D977252DB2EA009608FD /* DocumentCell.xib in Resources */,
-				9B6A3D5C252E096F005A3367 /* PersonView.xib in Resources */,
 				182A81EC252C17280011D7E9 /* CellDetailMonth.xib in Resources */,
 				18F0E9FB25219A980031DB29 /* LaunchScreen.storyboard in Resources */,
 				18BA4D84252468D900D3E357 /* DayViewController.xib in Resources */,
@@ -539,7 +524,6 @@
 				18F0E9EF25219A960031DB29 /* AppDelegate.swift in Sources */,
 				18AE1C21252B2AAE0059EC18 /* DayTableViewCell.swift in Sources */,
 				18BA4D85252468D900D3E357 /* DayViewController.swift in Sources */,
-				9B6A3D5A252E0965005A3367 /* PersonView.swift in Sources */,
 				1860CC45252AB7E5006DD73F /* CalendarVC.swift in Sources */,
 				18BA4D702524602C00D3E357 /* MonthViewController.swift in Sources */,
 			);

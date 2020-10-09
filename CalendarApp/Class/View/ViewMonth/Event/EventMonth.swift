@@ -11,6 +11,11 @@ class EventMonth: UIView {
 
     @IBOutlet weak var myTable: UITableView!
     var arrEventDetail : Data!
+    {
+        didSet{
+            myTable.reloadData()
+        }
+    }
     
     func fromNib(nibName : String, index : Int! = 0) -> UIView {
         let bundle = Bundle.main
