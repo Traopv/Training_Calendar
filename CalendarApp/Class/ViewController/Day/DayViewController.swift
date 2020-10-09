@@ -34,6 +34,10 @@ class DayViewController: UIViewController {
     {
         didSet{
             fetchDayData(date: selectedDate)
+            if arrEvent.count != 0 {
+                arrEventDetail = arrEvent[0]
+                myTable.reloadData()
+            }
         }
     }
     
@@ -143,7 +147,6 @@ extension DayViewController : UITableViewDelegate,UITableViewDataSource{
             cell.conFig()
             return cell
        } else if tableView == self.myTableEvent {
-            
             switch indexPath.row {
                 case 0:
                     let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell1", for: indexPath) as! EventCell1

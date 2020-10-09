@@ -105,6 +105,9 @@
                             <state key="normal" title="Ngày hiện tại">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="chooseCurrentDate:" destination="-1" eventType="touchUpInside" id="OO1-5B-juO"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tháng 09/2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frp-8N-3MZ">
                             <rect key="frame" x="15" y="17" width="147" height="24"/>
@@ -138,7 +141,7 @@
                 <constraint firstAttribute="trailing" secondItem="FlA-Oa-akL" secondAttribute="trailing" id="Yx2-qz-GwQ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="90" y="89"/>
+            <point key="canvasLocation" x="-324" y="76"/>
         </view>
     </objects>
     <resources>

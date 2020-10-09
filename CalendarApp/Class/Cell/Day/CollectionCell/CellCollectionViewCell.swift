@@ -27,7 +27,7 @@ class CellCollectionViewCell: UICollectionViewCell {
     var selectedDate : Date = Date()
     {
         didSet{
-            myCollection.reloadData()
+            //myCollection.reloadData()
         }
     }
     
@@ -60,8 +60,8 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
         let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "DayCell", for: indexPath) as! DayCell
         if indexType == 0 { // Cell Day
             let date = allDaysInMonth[indexPath.row] as Date
-            cell.layer.borderWidth = 1
-            cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
+//            cell.layer.borderWidth = 1
+//            cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
             if (currentDate.day == date.day && currentDate.month == date.month && currentDate.year == date.year){
                 cell.viewCell.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
             } else {
@@ -87,13 +87,13 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
             } else {
                 cell.imgCell.isHidden = true
             }
-            if selectedDate.day == date.day && selectedDate.month == date.month && selectedDate.year == date.year {
-                cell.layer.borderWidth = 1
-                cell.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-            } else {
-                cell.layer.borderWidth = 1
-                cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-            }
+//            if selectedDate.day == date.day && selectedDate.month == date.month && selectedDate.year == date.year {
+//                cell.layer.borderWidth = 1
+//                cell.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+//            } else {
+//                cell.layer.borderWidth = 1
+//                cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
+//            }
             return cell
         } else { // Cell Month
             let date = allDaysInMonth[indexPath.row] as Date
@@ -119,21 +119,14 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
             // show su kien
             let items = GetData.findEvent1(value: date, in: arrEvent)
             if items?.count != 0 {
-                cell1.imgCell.isHidden = false
-                cell1.lbTitle.isHidden = false
-                cell1.lbHour.isHidden = false
-                
+                cell1.myTable.isHidden = false
+                let filter = items?.filter { (item: Data) -> Bool in
+                    return item.startDate.day == date.day && item.startDate.month == date.month && item.startDate.year == date.year
+                }
+                cell1.arrEvent = filter ?? []
+                print("==> cell1.arrEvent",cell1.arrEvent)
             } else {
-                cell1.imgCell.isHidden = true
-                cell1.lbTitle.isHidden = true
-                cell1.lbHour.isHidden = true
-            }
-            let filter = items?.filter { (item: Data) -> Bool in
-                return item.startDate.day == date.day && item.startDate.month == date.month && item.startDate.year == date.year
-            }
-            filter?.forEach{item in
-                cell1.lbHour.text = item.startDate.toString(dateFormat: "HH:mm")
-                cell1.lbTitle.text = item.title
+                cell1.myTable.isHidden = true
             }
             switch indexPath.row {
             case 5,6,12,13,19,20,26,27,33,34,40,41:
@@ -146,19 +139,7 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexType == 1 {
-            let date = allDaysInMonth[indexPath.row] as Date
-            let  detailMonth : DetailMonth = DetailMonth().fromNib(nibName: "DetailMonth", index: 0) as! DetailMonth
-            detailMonth.currentDate = date
-            detailMonth.arrEvent = GetData.findEvent1(value: date, in: arrEvent) ?? []
-            detailMonth.conFig()
-            let klc = KLCPopup.init(contentView: detailMonth)
-            klc?.showType = .bounceInFromLeft
-            klc?.dismissType = .bounceOutToTop
-            klc?.maskType = .dimmed
-            klc?.shouldDismissOnBackgroundTouch = true
-            klc?.show()
-        } else {
+        if indexType == 0 {
             let date = allDaysInMonth[indexPath.row] as Date
             selectedDate = date
             closureShowEvent?(date)

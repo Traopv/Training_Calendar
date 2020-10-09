@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182A4070253048740045CB28 /* MonthTBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A406E253048740045CB28 /* MonthTBCell.swift */; };
+		182A4071253048740045CB28 /* MonthTBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A406F253048740045CB28 /* MonthTBCell.xib */; };
 		182A81E5252C165A0011D7E9 /* DetailMonth.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A81E3252C165A0011D7E9 /* DetailMonth.xib */; };
 		182A81E6252C165A0011D7E9 /* DetailMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A81E4252C165A0011D7E9 /* DetailMonth.swift */; };
 		182A81EB252C17280011D7E9 /* CellDetailMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A81E9252C17280011D7E9 /* CellDetailMonth.swift */; };
@@ -19,6 +21,8 @@
 		187D75612522DDBA00A940EA /* EventKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D75602522DDBA00A940EA /* EventKit.swift */; };
 		188DA86C252EB4AA008A63C0 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188DA86A252EB4AA008A63C0 /* PersonCell.swift */; };
 		188DA86D252EB4AA008A63C0 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188DA86B252EB4AA008A63C0 /* PersonCell.xib */; };
+		18A5B3A125305042008E8126 /* EventMonth.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A5B3A025305042008E8126 /* EventMonth.xib */; };
+		18A5B3A42530504F008E8126 /* EventMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B3A32530504F008E8126 /* EventMonth.swift */; };
 		18AE1C21252B2AAE0059EC18 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE1C1F252B2AAE0059EC18 /* DayTableViewCell.swift */; };
 		18AE1C22252B2AAE0059EC18 /* DayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AE1C20252B2AAE0059EC18 /* DayTableViewCell.xib */; };
 		18B0D976252DB2EA009608FD /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0D974252DB2EA009608FD /* DocumentCell.swift */; };
@@ -57,6 +61,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182A406E253048740045CB28 /* MonthTBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthTBCell.swift; sourceTree = "<group>"; };
+		182A406F253048740045CB28 /* MonthTBCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthTBCell.xib; sourceTree = "<group>"; };
 		182A81E3252C165A0011D7E9 /* DetailMonth.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailMonth.xib; sourceTree = "<group>"; };
 		182A81E4252C165A0011D7E9 /* DetailMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMonth.swift; sourceTree = "<group>"; };
 		182A81E9252C17280011D7E9 /* CellDetailMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDetailMonth.swift; sourceTree = "<group>"; };
@@ -70,6 +76,8 @@
 		187D75602522DDBA00A940EA /* EventKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventKit.swift; sourceTree = "<group>"; };
 		188DA86A252EB4AA008A63C0 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		188DA86B252EB4AA008A63C0 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
+		18A5B3A025305042008E8126 /* EventMonth.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventMonth.xib; sourceTree = "<group>"; };
+		18A5B3A32530504F008E8126 /* EventMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonth.swift; sourceTree = "<group>"; };
 		18AE1C1F252B2AAE0059EC18 /* DayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
 		18AE1C20252B2AAE0059EC18 /* DayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayTableViewCell.xib; sourceTree = "<group>"; };
 		18B0D974252DB2EA009608FD /* DocumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
@@ -122,9 +130,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182A406D2530485C0045CB28 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				182A406E253048740045CB28 /* MonthTBCell.swift */,
+				182A406F253048740045CB28 /* MonthTBCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		182A407325304CED0045CB28 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				18A5B3A32530504F008E8126 /* EventMonth.swift */,
+				18A5B3A025305042008E8126 /* EventMonth.xib */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 		182A81E2252C165A0011D7E9 /* ViewMonth */ = {
 			isa = PBXGroup;
 			children = (
+				182A407325304CED0045CB28 /* Event */,
 				182A81E8252C17280011D7E9 /* CellMonth */,
 				182A81E4252C165A0011D7E9 /* DetailMonth.swift */,
 				182A81E3252C165A0011D7E9 /* DetailMonth.xib */,
@@ -153,6 +180,7 @@
 		1860CC49252ACFA7006DD73F /* Month */ = {
 			isa = PBXGroup;
 			children = (
+				182A406D2530485C0045CB28 /* TableCell */,
 				1860CC4A252ACFAD006DD73F /* CollectionCell */,
 			);
 			path = Month;
@@ -458,7 +486,9 @@
 				182A81EC252C17280011D7E9 /* CellDetailMonth.xib in Resources */,
 				18F0E9FB25219A980031DB29 /* LaunchScreen.storyboard in Resources */,
 				18BA4D84252468D900D3E357 /* DayViewController.xib in Resources */,
+				182A4071253048740045CB28 /* MonthTBCell.xib in Resources */,
 				18BA4D902524690D00D3E357 /* CellCollectionViewCell.xib in Resources */,
+				18A5B3A125305042008E8126 /* EventMonth.xib in Resources */,
 				18BA4D922524690D00D3E357 /* CellDate.xib in Resources */,
 				9B6A3D67252E2008005A3367 /* EventCell2.xib in Resources */,
 				18F0E9F825219A980031DB29 /* Assets.xcassets in Resources */,
@@ -483,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182A4070253048740045CB28 /* MonthTBCell.swift in Sources */,
 				187D75612522DDBA00A940EA /* EventKit.swift in Sources */,
 				18BA4D912524690D00D3E357 /* CellDate.swift in Sources */,
 				9B6A3D6A252E2062005A3367 /* EventCell3.swift in Sources */,
@@ -496,6 +527,7 @@
 				9B6A3D66252E2008005A3367 /* EventCell2.swift in Sources */,
 				18F0EA1425219C5C0031DB29 /* ExtensionDate.swift in Sources */,
 				188DA86C252EB4AA008A63C0 /* PersonCell.swift in Sources */,
+				18A5B3A42530504F008E8126 /* EventMonth.swift in Sources */,
 				18F0EA1225219C5C0031DB29 /* ExtensionCalendar.swift in Sources */,
 				18F0EA1525219C5C0031DB29 /* Utils.swift in Sources */,
 				18EF12FA252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.m in Sources */,
@@ -666,7 +698,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = demo.abc.CalendarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Downloads/Training_Calendar/CalendarApp/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/ULife/Training_Calendar/CalendarApp/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -687,7 +719,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = demo.abc.CalendarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Downloads/Training_Calendar/CalendarApp/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/ULife/Training_Calendar/CalendarApp/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -26,9 +26,13 @@ class CalendarVC: UIViewController {
         didSet{
             fetchDayData(date: selectedDate)
             //myCollection.reloadData()
+            if currentDate.day == selectedDate.day && currentDate.month == selectedDate.month && currentDate.year == selectedDate.year {
+                btnCurrentDay.isHidden = true
+            }
         }
     }
     var closureChooseDate: ((_ date : Date) -> Void)?
+    var closureIsCurrentDay: ((_ isCurrentDay : Bool) -> Void)?
     
     var currentPage: Date {
         let offsetX = myCollection.contentOffset.x
@@ -87,6 +91,11 @@ class CalendarVC: UIViewController {
             allData = GetData.getDataInCalendar()
             fetchDayData(date: selectedDate)
             myCollection.reloadData()
+            // sau khi load data xong. thi scroll toi item 1
+            DispatchQueue.main.async {
+                let ind = IndexPath(item: 1, section: 0)
+                self.myCollection.scrollToItem(at: ind, at: .right, animated: false)
+            }
         }
     }
     func fetchDayData(date: Date){
@@ -100,8 +109,21 @@ class CalendarVC: UIViewController {
     
     //MARK:-
     //MARK: Button function
-    
-    @IBAction func btnCurrentDay(_ sender: Any) {
+    @IBAction func chooseCurrentDate(_ sender: Any) {
+        DispatchQueue.main.async { [self] in
+            listMonth = [Date().addMonths(numberOfMonths: 3),
+                                     Date(),
+                                     Date().addMonths(numberOfMonths: 1),
+                                     Date().addMonths(numberOfMonths: 2),
+                                     Date().addMonths(numberOfMonths: 3),
+                                     Date()]
+            self.myCollection.reloadData()
+            self.reloadMonthTitle()
+        }
+        let ind = IndexPath(item: 1, section: 0)
+        myCollection.scrollToItem(at: ind, at: .right, animated: false)
+        btnCurrentDay.isHidden = true
+        closureChooseDate?(currentDate)
     }
 }
 
@@ -153,6 +175,7 @@ extension CalendarVC : UICollectionViewDelegate,UICollectionViewDataSource,UIScr
                 if let strongSelf = weakSelf {
                     strongSelf.myCollection.scrollToItem(at: IndexPath(row: strongSelf.currentIndex, section: 0), at: .left, animated: false)
                     strongSelf.reloadMonthTitle()
+                    strongSelf.btnCurrentDay.isHidden = false
                 }
             }
         } else {
@@ -168,11 +191,13 @@ extension CalendarVC : UICollectionViewDelegate,UICollectionViewDataSource,UIScr
                         strongSelf.currentIndex = 1
                         strongSelf.myCollection.scrollToItem(at: IndexPath(row: strongSelf.currentIndex, section: 0), at: .left, animated: false)
                         strongSelf.reloadMonthTitle()
+                        strongSelf.btnCurrentDay.isHidden = false
                     }
                 }
             } else {
                 currentIndex = index
                 reloadMonthTitle()
+                btnCurrentDay.isHidden = false
             }
         }
     }
