@@ -58,21 +58,12 @@ extension EventMonth : UITableViewDelegate,UITableViewDataSource{
                 return cell
             case 2:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell3", for: indexPath) as! EventCell3
-                cell.numberDocs = 3
+                cell.numberDocs = 7
                 cell.conFig()
                 return cell
             default:
                 break
         }
         return UITableViewCell.init()
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if tableView == self.myTable {
-//            if arrEvent.count != 0 {
-//                arrEventDetail = arrEvent[indexPath.row]
-//                myTableEvent.reloadData()
-//            }
-//        }
     }
 }

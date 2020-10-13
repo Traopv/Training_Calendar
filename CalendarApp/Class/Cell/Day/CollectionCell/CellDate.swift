@@ -19,7 +19,7 @@ class CellDate: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        viewCell.layer.cornerRadius = 3
-        viewCell.layer.masksToBounds = true
+        contentView.layer.cornerRadius = 5
+        contentView.layer.masksToBounds = true
     }
 }

@@ -60,8 +60,6 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
         let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "DayCell", for: indexPath) as! DayCell
         if indexType == 0 { // Cell Day
             let date = allDaysInMonth[indexPath.row] as Date
-//            cell.layer.borderWidth = 1
-//            cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
             if (currentDate.day == date.day && currentDate.month == date.month && currentDate.year == date.year){
                 cell.viewCell.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
             } else {
@@ -87,13 +85,6 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
             } else {
                 cell.imgCell.isHidden = true
             }
-//            if selectedDate.day == date.day && selectedDate.month == date.month && selectedDate.year == date.year {
-//                cell.layer.borderWidth = 1
-//                cell.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-//            } else {
-//                cell.layer.borderWidth = 1
-//                cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-//            }
             return cell
         } else { // Cell Month
             let date = allDaysInMonth[indexPath.row] as Date
@@ -124,7 +115,6 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
                     return item.startDate.day == date.day && item.startDate.month == date.month && item.startDate.year == date.year
                 }
                 cell1.arrEvent = filter ?? []
-                print("==> cell1.arrEvent",cell1.arrEvent)
             } else {
                 cell1.myTable.isHidden = true
             }
@@ -143,6 +133,15 @@ extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
             let date = allDaysInMonth[indexPath.row] as Date
             selectedDate = date
             closureShowEvent?(date)
+        
+            if let cell = collectionView.cellForItem(at: indexPath) {
+                cell.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+                cell.layer.borderWidth = 1
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3 , execute:
+                {
+                    cell.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
+                })
+            }
         }
     }
 }

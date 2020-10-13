@@ -60,7 +60,7 @@
                 <outlet property="lbDay" destination="UM3-Cp-ciK" id="ZnN-Og-Bcd"/>
                 <outlet property="viewCell" destination="ybK-vK-aKs" id="7ZO-wy-wrI"/>
             </connections>
-            <point key="canvasLocation" x="-820.28985507246387" y="-33.482142857142854"/>
+            <point key="canvasLocation" x="-1004" y="175"/>
         </collectionViewCell>
     </objects>
     <resources>

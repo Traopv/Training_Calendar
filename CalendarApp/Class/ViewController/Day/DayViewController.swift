@@ -18,6 +18,7 @@ class DayViewController: UIViewController {
     @IBOutlet weak var imgEventDetail: UIImageView!
     @IBOutlet weak var viewCollection: UIView!
     @IBOutlet weak var viewEventDetail: UIView!
+    @IBOutlet weak var lbNotEvent: UILabel!
     
     let eventMonth = EventMonth().fromNib(nibName: "EventMonth") as! EventMonth
     let calendarVC = CalendarVC.init()
@@ -55,7 +56,8 @@ class DayViewController: UIViewController {
         calendarVC.closureChooseDate = { (dateChoose: Date) in
             self.selectedDate = dateChoose
         }
-        eventMonth.frame = CGRect(x: 0, y: 0, width: 803, height: 834)
+//        eventMonth.frame = CGRect(x: 0, y: 0, width: 803, height: 834)
+        eventMonth.frame = CGRect(x: 0, y: 0, width: viewEventDetail.bounds.width, height: viewEventDetail.bounds.height)
         eventMonth.conFig()
         viewEventDetail.addSubview(eventMonth)
         
@@ -91,11 +93,13 @@ class DayViewController: UIViewController {
         if self.arrEvent.count != 0 {
             self.imgCalendar.isHidden = true
             self.imgEventDetail.isHidden = true
+            self.lbNotEvent.isHidden = true
             self.myTable.isHidden = false
             self.viewEventDetail.isHidden = false
         } else {
             self.imgCalendar.isHidden = false
             self.imgEventDetail.isHidden = false
+            self.lbNotEvent.isHidden = false
             self.myTable.isHidden = true
             self.viewEventDetail.isHidden = true
         }

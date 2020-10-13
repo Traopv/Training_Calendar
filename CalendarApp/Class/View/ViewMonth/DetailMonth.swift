@@ -18,7 +18,6 @@ class DetailMonth: UIView {
     //MARK:-
     //MARK: Setup
     func conFig() {
-        lbDate.text = String(currentDate.toString(dateFormat: "dd-MM-yyyy"))
         layer.cornerRadius = 8
         layer.masksToBounds = true
         myTable.register(UINib.init(nibName: "CellDetailMonth", bundle: nil), forCellReuseIdentifier: "CellDetailMonth")

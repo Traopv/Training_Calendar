@@ -13,6 +13,18 @@
 		182A81E6252C165A0011D7E9 /* DetailMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A81E4252C165A0011D7E9 /* DetailMonth.swift */; };
 		182A81EB252C17280011D7E9 /* CellDetailMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A81E9252C17280011D7E9 /* CellDetailMonth.swift */; };
 		182A81EC252C17280011D7E9 /* CellDetailMonth.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A81EA252C17280011D7E9 /* CellDetailMonth.xib */; };
+		1854687525358C750093AAA1 /* ListReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854687425358C750093AAA1 /* ListReportView.swift */; };
+		1854687925358C7E0093AAA1 /* ListReportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1854687825358C7E0093AAA1 /* ListReportView.xib */; };
+		18546886253595BA0093AAA1 /* ListReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18546884253595BA0093AAA1 /* ListReportViewController.swift */; };
+		18546887253595BA0093AAA1 /* ListReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18546885253595BA0093AAA1 /* ListReportViewController.xib */; };
+		1854688F2535A49A0093AAA1 /* ListNotifiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854688D2535A49A0093AAA1 /* ListNotifiCell.swift */; };
+		185468902535A49A0093AAA1 /* ListNotifiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1854688E2535A49A0093AAA1 /* ListNotifiCell.xib */; };
+		185468962535AD870093AAA1 /* CellDetailNotifi1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185468942535AD870093AAA1 /* CellDetailNotifi1.swift */; };
+		185468972535AD870093AAA1 /* CellDetailNotifi1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185468952535AD870093AAA1 /* CellDetailNotifi1.xib */; };
+		1854689B2535AD930093AAA1 /* CellDetailNotifi2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185468992535AD930093AAA1 /* CellDetailNotifi2.swift */; };
+		1854689C2535AD930093AAA1 /* CellDetailNotifi2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1854689A2535AD930093AAA1 /* CellDetailNotifi2.xib */; };
+		185468A02535ADA00093AAA1 /* CellDetailNotifi3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854689E2535ADA00093AAA1 /* CellDetailNotifi3.swift */; };
+		185468A12535ADA00093AAA1 /* CellDetailNotifi3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1854689F2535ADA00093AAA1 /* CellDetailNotifi3.xib */; };
 		1860CC45252AB7E5006DD73F /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860CC43252AB7E5006DD73F /* CalendarVC.swift */; };
 		1860CC46252AB7E5006DD73F /* CalendarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1860CC44252AB7E5006DD73F /* CalendarVC.xib */; };
 		1860CC4D252ACFCC006DD73F /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860CC4B252ACFCC006DD73F /* DayCell.swift */; };
@@ -37,6 +49,17 @@
 		18BA4D912524690D00D3E357 /* CellDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA4D8D2524690D00D3E357 /* CellDate.swift */; };
 		18BA4D922524690D00D3E357 /* CellDate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BA4D8E2524690D00D3E357 /* CellDate.xib */; };
 		18BA4D932524690D00D3E357 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA4D8F2524690D00D3E357 /* CellCollectionViewCell.swift */; };
+		18D42D7525353F3800819EB4 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D42D7425353F3800819EB4 /* HMSegmentedControl.m */; };
+		18D42D7B25355DF200819EB4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D42D7925355DF200819EB4 /* MenuViewController.swift */; };
+		18D42D7C25355DF200819EB4 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D42D7A25355DF200819EB4 /* MenuViewController.xib */; };
+		18D42D812535610D00819EB4 /* CellMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D42D7F2535610D00819EB4 /* CellMenu.swift */; };
+		18D42D822535610D00819EB4 /* CellMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D42D802535610D00819EB4 /* CellMenu.xib */; };
+		18D42D872535666F00819EB4 /* NotifiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D42D852535666F00819EB4 /* NotifiViewController.swift */; };
+		18D42D882535666F00819EB4 /* NotifiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D42D862535666F00819EB4 /* NotifiViewController.xib */; };
+		18D42D8D253569F600819EB4 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D42D8B253569F600819EB4 /* ReportViewController.swift */; };
+		18D42D8E253569F600819EB4 /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D42D8C253569F600819EB4 /* ReportViewController.xib */; };
+		18D42D9325356C6100819EB4 /* CellReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D42D9125356C6100819EB4 /* CellReport.swift */; };
+		18D42D9425356C6100819EB4 /* CellReport.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D42D9225356C6100819EB4 /* CellReport.xib */; };
 		18EF12FA252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF12F8252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.m */; };
 		18F0E9EF25219A960031DB29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0E9EE25219A960031DB29 /* AppDelegate.swift */; };
 		18F0E9F325219A960031DB29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0E9F225219A960031DB29 /* ViewController.swift */; };
@@ -65,6 +88,18 @@
 		182A81E4252C165A0011D7E9 /* DetailMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMonth.swift; sourceTree = "<group>"; };
 		182A81E9252C17280011D7E9 /* CellDetailMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDetailMonth.swift; sourceTree = "<group>"; };
 		182A81EA252C17280011D7E9 /* CellDetailMonth.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellDetailMonth.xib; sourceTree = "<group>"; };
+		1854687425358C750093AAA1 /* ListReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReportView.swift; sourceTree = "<group>"; };
+		1854687825358C7E0093AAA1 /* ListReportView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListReportView.xib; sourceTree = "<group>"; };
+		18546884253595BA0093AAA1 /* ListReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReportViewController.swift; sourceTree = "<group>"; };
+		18546885253595BA0093AAA1 /* ListReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListReportViewController.xib; sourceTree = "<group>"; };
+		1854688D2535A49A0093AAA1 /* ListNotifiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotifiCell.swift; sourceTree = "<group>"; };
+		1854688E2535A49A0093AAA1 /* ListNotifiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListNotifiCell.xib; sourceTree = "<group>"; };
+		185468942535AD870093AAA1 /* CellDetailNotifi1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDetailNotifi1.swift; sourceTree = "<group>"; };
+		185468952535AD870093AAA1 /* CellDetailNotifi1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellDetailNotifi1.xib; sourceTree = "<group>"; };
+		185468992535AD930093AAA1 /* CellDetailNotifi2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDetailNotifi2.swift; sourceTree = "<group>"; };
+		1854689A2535AD930093AAA1 /* CellDetailNotifi2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellDetailNotifi2.xib; sourceTree = "<group>"; };
+		1854689E2535ADA00093AAA1 /* CellDetailNotifi3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDetailNotifi3.swift; sourceTree = "<group>"; };
+		1854689F2535ADA00093AAA1 /* CellDetailNotifi3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellDetailNotifi3.xib; sourceTree = "<group>"; };
 		1860CC43252AB7E5006DD73F /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		1860CC44252AB7E5006DD73F /* CalendarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarVC.xib; sourceTree = "<group>"; };
 		1860CC4B252ACFCC006DD73F /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
@@ -90,6 +125,18 @@
 		18BA4D8D2524690D00D3E357 /* CellDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDate.swift; sourceTree = "<group>"; };
 		18BA4D8E2524690D00D3E357 /* CellDate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellDate.xib; sourceTree = "<group>"; };
 		18BA4D8F2524690D00D3E357 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
+		18D42D7325353F3800819EB4 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		18D42D7425353F3800819EB4 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		18D42D7925355DF200819EB4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		18D42D7A25355DF200819EB4 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		18D42D7F2535610D00819EB4 /* CellMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellMenu.swift; sourceTree = "<group>"; };
+		18D42D802535610D00819EB4 /* CellMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellMenu.xib; sourceTree = "<group>"; };
+		18D42D852535666F00819EB4 /* NotifiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifiViewController.swift; sourceTree = "<group>"; };
+		18D42D862535666F00819EB4 /* NotifiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotifiViewController.xib; sourceTree = "<group>"; };
+		18D42D8B253569F600819EB4 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		18D42D8C253569F600819EB4 /* ReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportViewController.xib; sourceTree = "<group>"; };
+		18D42D9125356C6100819EB4 /* CellReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReport.swift; sourceTree = "<group>"; };
+		18D42D9225356C6100819EB4 /* CellReport.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellReport.xib; sourceTree = "<group>"; };
 		18EF12F8252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UpdateAutoLayoutConstraints.m"; sourceTree = "<group>"; };
 		18EF12F9252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UpdateAutoLayoutConstraints.h"; sourceTree = "<group>"; };
 		18F0E9EB25219A960031DB29 /* CalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +211,63 @@
 			path = CellMonth;
 			sourceTree = "<group>";
 		};
+		1854687325358C580093AAA1 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				1854687B253590E70093AAA1 /* ListReport */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		1854687B253590E70093AAA1 /* ListReport */ = {
+			isa = PBXGroup;
+			children = (
+				1854687425358C750093AAA1 /* ListReportView.swift */,
+				1854687825358C7E0093AAA1 /* ListReportView.xib */,
+			);
+			path = ListReport;
+			sourceTree = "<group>";
+		};
+		185468832535959A0093AAA1 /* ListReport */ = {
+			isa = PBXGroup;
+			children = (
+				18546884253595BA0093AAA1 /* ListReportViewController.swift */,
+				18546885253595BA0093AAA1 /* ListReportViewController.xib */,
+			);
+			path = ListReport;
+			sourceTree = "<group>";
+		};
+		1854688B2535A4750093AAA1 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				1854688C2535A4810093AAA1 /* Table */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		1854688C2535A4810093AAA1 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				185468932535AD5F0093AAA1 /* DetailNotifi */,
+				1854688D2535A49A0093AAA1 /* ListNotifiCell.swift */,
+				1854688E2535A49A0093AAA1 /* ListNotifiCell.xib */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		185468932535AD5F0093AAA1 /* DetailNotifi */ = {
+			isa = PBXGroup;
+			children = (
+				185468942535AD870093AAA1 /* CellDetailNotifi1.swift */,
+				185468952535AD870093AAA1 /* CellDetailNotifi1.xib */,
+				185468992535AD930093AAA1 /* CellDetailNotifi2.swift */,
+				1854689A2535AD930093AAA1 /* CellDetailNotifi2.xib */,
+				1854689E2535ADA00093AAA1 /* CellDetailNotifi3.swift */,
+				1854689F2535ADA00093AAA1 /* CellDetailNotifi3.xib */,
+			);
+			path = DetailNotifi;
+			sourceTree = "<group>";
+		};
 		1860CC42252AB7D5006DD73F /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +298,7 @@
 		1860CC52252ADB92006DD73F /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				18D42D7225353F3800819EB4 /* HMSegmentedControl */,
 				18EF12F7252D63140052C317 /* UIView+UpdateAutoLayoutConstraints.h */,
 				1860CC53252ADB92006DD73F /* KLCPopup */,
 			);
@@ -212,6 +317,7 @@
 		1860CC58252ADB9B006DD73F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1854687325358C580093AAA1 /* Report */,
 				18B0D964252DA0E0009608FD /* ViewDay */,
 				182A81E2252C165A0011D7E9 /* ViewMonth */,
 			);
@@ -276,6 +382,9 @@
 		18BA4D892524690D00D3E357 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				1854688B2535A4750093AAA1 /* Notification */,
+				18D42D9025356C4200819EB4 /* Report */,
+				18D42D7E253560EF00819EB4 /* Menu */,
 				1860CC49252ACFA7006DD73F /* Month */,
 				18BA4D8A2524690D00D3E357 /* Day */,
 			);
@@ -301,6 +410,61 @@
 				18BA4D8E2524690D00D3E357 /* CellDate.xib */,
 			);
 			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		18D42D6325353C9A00819EB4 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				18D42D7925355DF200819EB4 /* MenuViewController.swift */,
+				18D42D7A25355DF200819EB4 /* MenuViewController.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		18D42D7225353F3800819EB4 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				18D42D7325353F3800819EB4 /* HMSegmentedControl.h */,
+				18D42D7425353F3800819EB4 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		18D42D7E253560EF00819EB4 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				18D42D7F2535610D00819EB4 /* CellMenu.swift */,
+				18D42D802535610D00819EB4 /* CellMenu.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		18D42D842535665300819EB4 /* NotiFi */ = {
+			isa = PBXGroup;
+			children = (
+				18D42D852535666F00819EB4 /* NotifiViewController.swift */,
+				18D42D862535666F00819EB4 /* NotifiViewController.xib */,
+			);
+			path = NotiFi;
+			sourceTree = "<group>";
+		};
+		18D42D8A253569E000819EB4 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				185468832535959A0093AAA1 /* ListReport */,
+				18D42D8B253569F600819EB4 /* ReportViewController.swift */,
+				18D42D8C253569F600819EB4 /* ReportViewController.xib */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		18D42D9025356C4200819EB4 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				18D42D9125356C6100819EB4 /* CellReport.swift */,
+				18D42D9225356C6100819EB4 /* CellReport.xib */,
+			);
+			path = Report;
 			sourceTree = "<group>";
 		};
 		18EF12F7252D63140052C317 /* UIView+UpdateAutoLayoutConstraints.h */ = {
@@ -350,6 +514,9 @@
 		18F0EA0425219AC10031DB29 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18D42D8A253569E000819EB4 /* Report */,
+				18D42D842535665300819EB4 /* NotiFi */,
+				18D42D6325353C9A00819EB4 /* Menu */,
 				1860CC42252AB7D5006DD73F /* Calendar */,
 				18BA4D81252468D900D3E357 /* Day */,
 				18BA4D6D2524600C00D3E357 /* Month */,
@@ -470,22 +637,33 @@
 				18B0D977252DB2EA009608FD /* DocumentCell.xib in Resources */,
 				182A81EC252C17280011D7E9 /* CellDetailMonth.xib in Resources */,
 				18F0E9FB25219A980031DB29 /* LaunchScreen.storyboard in Resources */,
+				185468972535AD870093AAA1 /* CellDetailNotifi1.xib in Resources */,
 				18BA4D84252468D900D3E357 /* DayViewController.xib in Resources */,
 				182A4071253048740045CB28 /* MonthTBCell.xib in Resources */,
+				18D42D822535610D00819EB4 /* CellMenu.xib in Resources */,
 				18BA4D902524690D00D3E357 /* CellCollectionViewCell.xib in Resources */,
 				18A5B3A125305042008E8126 /* EventMonth.xib in Resources */,
+				18D42D7C25355DF200819EB4 /* MenuViewController.xib in Resources */,
+				18D42D882535666F00819EB4 /* NotifiViewController.xib in Resources */,
+				18546887253595BA0093AAA1 /* ListReportViewController.xib in Resources */,
 				18BA4D922524690D00D3E357 /* CellDate.xib in Resources */,
+				18D42D9425356C6100819EB4 /* CellReport.xib in Resources */,
 				9B6A3D67252E2008005A3367 /* EventCell2.xib in Resources */,
 				18F0E9F825219A980031DB29 /* Assets.xcassets in Resources */,
 				18AE1C22252B2AAE0059EC18 /* DayTableViewCell.xib in Resources */,
 				18F0E9F625219A960031DB29 /* Main.storyboard in Resources */,
+				18D42D8E253569F600819EB4 /* ReportViewController.xib in Resources */,
+				1854687925358C7E0093AAA1 /* ListReportView.xib in Resources */,
 				182A81E5252C165A0011D7E9 /* DetailMonth.xib in Resources */,
+				185468A12535ADA00093AAA1 /* CellDetailNotifi3.xib in Resources */,
+				185468902535A49A0093AAA1 /* ListNotifiCell.xib in Resources */,
 				9B6A3D63252E1EB7005A3367 /* EventCell1.xib in Resources */,
 				1860CC46252AB7E5006DD73F /* CalendarVC.xib in Resources */,
 				18F0EA1F25219D170031DB29 /* Event.json in Resources */,
 				9B6A3D6B252E2062005A3367 /* EventCell3.xib in Resources */,
 				18BA4D712524602C00D3E357 /* MonthViewController.xib in Resources */,
 				1860CC4E252ACFCC006DD73F /* DayCell.xib in Resources */,
+				1854689C2535AD930093AAA1 /* CellDetailNotifi2.xib in Resources */,
 				188DA86D252EB4AA008A63C0 /* PersonCell.xib in Resources */,
 				18BA4D6925245FD700D3E357 /* HomeViewController.xib in Resources */,
 			);
@@ -499,6 +677,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				182A4070253048740045CB28 /* MonthTBCell.swift in Sources */,
+				18D42D9325356C6100819EB4 /* CellReport.swift in Sources */,
+				18D42D812535610D00819EB4 /* CellMenu.swift in Sources */,
+				18D42D7B25355DF200819EB4 /* MenuViewController.swift in Sources */,
 				187D75612522DDBA00A940EA /* EventKit.swift in Sources */,
 				18BA4D912524690D00D3E357 /* CellDate.swift in Sources */,
 				9B6A3D6A252E2062005A3367 /* EventCell3.swift in Sources */,
@@ -507,6 +688,7 @@
 				18B0D976252DB2EA009608FD /* DocumentCell.swift in Sources */,
 				1860CC56252ADB92006DD73F /* KLCPopup.m in Sources */,
 				9B6A3D62252E1EB7005A3367 /* EventCell1.swift in Sources */,
+				18D42D7525353F3800819EB4 /* HMSegmentedControl.m in Sources */,
 				18BA4D6A25245FD700D3E357 /* HomeViewController.swift in Sources */,
 				182A81E6252C165A0011D7E9 /* DetailMonth.swift in Sources */,
 				9B6A3D66252E2008005A3367 /* EventCell2.swift in Sources */,
@@ -521,10 +703,18 @@
 				18BA4D932524690D00D3E357 /* CellCollectionViewCell.swift in Sources */,
 				18F0EA1B25219CD30031DB29 /* DateExtensions.swift in Sources */,
 				18F0EA1325219C5C0031DB29 /* GetData.swift in Sources */,
+				1854688F2535A49A0093AAA1 /* ListNotifiCell.swift in Sources */,
+				18D42D8D253569F600819EB4 /* ReportViewController.swift in Sources */,
 				18F0E9EF25219A960031DB29 /* AppDelegate.swift in Sources */,
 				18AE1C21252B2AAE0059EC18 /* DayTableViewCell.swift in Sources */,
 				18BA4D85252468D900D3E357 /* DayViewController.swift in Sources */,
+				1854687525358C750093AAA1 /* ListReportView.swift in Sources */,
+				185468A02535ADA00093AAA1 /* CellDetailNotifi3.swift in Sources */,
+				185468962535AD870093AAA1 /* CellDetailNotifi1.swift in Sources */,
+				18D42D872535666F00819EB4 /* NotifiViewController.swift in Sources */,
+				1854689B2535AD930093AAA1 /* CellDetailNotifi2.swift in Sources */,
 				1860CC45252AB7E5006DD73F /* CalendarVC.swift in Sources */,
+				18546886253595BA0093AAA1 /* ListReportViewController.swift in Sources */,
 				18BA4D702524602C00D3E357 /* MonthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

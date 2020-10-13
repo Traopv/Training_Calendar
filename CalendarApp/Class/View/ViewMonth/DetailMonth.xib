@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailMonth" customModule="Demo" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailMonth" customModule="CalendarApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="400" height="250"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -26,26 +26,18 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgL-Xl-CtA">
                     <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sự kiện : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k8-jS-mE3">
-                            <rect key="frame" x="99" y="13" width="80" height="24"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tài liệu tham khảo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k8-jS-mE3">
+                            <rect key="frame" x="121" y="13" width="157.5" height="24"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20-09-2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a21-wG-q3H">
-                            <rect key="frame" x="198" y="13" width="113" height="24"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                            <color key="textColor" systemColor="systemRedColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.12549552319999999" green="0.16820439700000001" blue="0.2174127102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="a21-wG-q3H" firstAttribute="leading" secondItem="7k8-jS-mE3" secondAttribute="trailing" constant="19" id="0Je-xf-dfn"/>
                         <constraint firstItem="7k8-jS-mE3" firstAttribute="centerY" secondItem="PgL-Xl-CtA" secondAttribute="centerY" id="68n-L2-l9K"/>
-                        <constraint firstItem="7k8-jS-mE3" firstAttribute="leading" secondItem="PgL-Xl-CtA" secondAttribute="leading" constant="99" id="Flc-Er-hYP"/>
+                        <constraint firstItem="7k8-jS-mE3" firstAttribute="leading" secondItem="PgL-Xl-CtA" secondAttribute="leading" constant="121" id="Flc-Er-hYP"/>
                         <constraint firstAttribute="height" constant="50" id="I2f-ay-srL"/>
-                        <constraint firstItem="a21-wG-q3H" firstAttribute="centerY" secondItem="PgL-Xl-CtA" secondAttribute="centerY" id="gSX-4K-WUa"/>
                     </constraints>
                 </view>
             </subviews>
@@ -62,18 +54,14 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="lbDate" destination="a21-wG-q3H" id="ZY3-K3-fNo"/>
                 <outlet property="myTable" destination="8Vy-n4-Van" id="WQm-CR-VpD"/>
             </connections>
-            <point key="canvasLocation" x="-1415.625" y="-26.25"/>
+            <point key="canvasLocation" x="-818" y="54"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

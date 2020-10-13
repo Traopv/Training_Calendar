@@ -30,34 +30,34 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pJJ-Hw-GvP">
+                                <rect key="frame" x="1" y="47" width="194" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.12549552319999999" green="0.16820439700000001" blue="0.2174127102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gTV-IL-0wX" id="ql3-F3-2rr"/>
+                                    <outlet property="delegate" destination="gTV-IL-0wX" id="aaC-Yv-lJj"/>
+                                </connections>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.12549552319999999" green="0.16820439700000001" blue="0.2174127102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1052148715" green="0.14882487059999999" blue="0.19404089450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pJJ-Hw-GvP" secondAttribute="trailing" constant="1" id="0KV-U4-eCk"/>
                             <constraint firstAttribute="trailing" secondItem="E51-FP-CC5" secondAttribute="trailing" constant="8" id="8tH-Eb-fu0"/>
+                            <constraint firstItem="pJJ-Hw-GvP" firstAttribute="leading" secondItem="ytx-L2-s88" secondAttribute="leading" constant="1" id="EXK-uT-J0h"/>
+                            <constraint firstItem="pJJ-Hw-GvP" firstAttribute="top" secondItem="E51-FP-CC5" secondAttribute="bottom" id="NfT-e0-6jK"/>
+                            <constraint firstAttribute="bottom" secondItem="pJJ-Hw-GvP" secondAttribute="bottom" id="U3Z-aJ-FdG"/>
                             <constraint firstItem="E51-FP-CC5" firstAttribute="top" secondItem="ytx-L2-s88" secondAttribute="top" constant="7" id="ZXj-zf-jAx"/>
                         </constraints>
                     </view>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pJJ-Hw-GvP">
-                        <rect key="frame" x="1" y="47.5" width="195" height="55.5"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.12549552319999999" green="0.16820439700000001" blue="0.2174127102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <connections>
-                            <outlet property="dataSource" destination="gTV-IL-0wX" id="ql3-F3-2rr"/>
-                            <outlet property="delegate" destination="gTV-IL-0wX" id="aaC-Yv-lJj"/>
-                        </connections>
-                    </tableView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" red="0.21674785020000001" green="0.28670871260000003" blue="0.35843372340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ytx-L2-s88" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="0.5" id="2wN-Iw-Lye"/>
-                <constraint firstItem="pJJ-Hw-GvP" firstAttribute="top" secondItem="E51-FP-CC5" secondAttribute="bottom" id="33B-pM-bOr"/>
-                <constraint firstAttribute="bottom" secondItem="pJJ-Hw-GvP" secondAttribute="bottom" id="MtH-eo-SPU"/>
                 <constraint firstItem="ytx-L2-s88" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="0.5" id="NLQ-3S-eOg"/>
-                <constraint firstAttribute="trailing" secondItem="pJJ-Hw-GvP" secondAttribute="trailing" constant="1" id="Nri-X6-eGr"/>
                 <constraint firstAttribute="trailing" secondItem="ytx-L2-s88" secondAttribute="trailing" constant="0.5" id="Q38-Q3-yAE"/>
-                <constraint firstItem="pJJ-Hw-GvP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="blS-pq-bW0"/>
                 <constraint firstAttribute="bottom" secondItem="ytx-L2-s88" secondAttribute="bottom" constant="0.5" id="w48-52-6TF"/>
             </constraints>
             <size key="customSize" width="197" height="157"/>
@@ -66,7 +66,7 @@
                 <outlet property="myTable" destination="pJJ-Hw-GvP" id="yGm-IB-DIF"/>
                 <outlet property="viewCell" destination="ytx-L2-s88" id="VoL-gd-o5D"/>
             </connections>
-            <point key="canvasLocation" x="-1869" y="43"/>
+            <point key="canvasLocation" x="-1457" y="9"/>
         </collectionViewCell>
     </objects>
 </document>

@@ -118,7 +118,7 @@ class CalendarVC: UIViewController {
                                      Date().addMonths(numberOfMonths: 3),
                                      Date()]
             self.myCollection.reloadData()
-            self.reloadMonthTitle()
+            self.lbShowMonth.text = "Tháng \(self.currentMonth) - \(self.currentYear)"
         }
         let ind = IndexPath(item: 1, section: 0)
         myCollection.scrollToItem(at: ind, at: .right, animated: false)
@@ -235,6 +235,7 @@ extension CalendarVC : UICollectionViewDelegate,UICollectionViewDataSource,UIScr
         
     }
 }
+
 //MARK:-
 extension CalendarVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,

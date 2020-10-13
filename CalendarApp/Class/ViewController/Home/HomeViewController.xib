@@ -39,13 +39,13 @@
                                 <segment title="Tháng"/>
                             </segments>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="selectedSegmentTintColor" red="0.12549552319999999" green="0.16820439700000001" blue="0.2174127102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="selectedSegmentTintColor" red="0.14607360959999999" green="0.19195324180000001" blue="0.24955743550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="selectedSegment:" destination="-1" eventType="valueChanged" id="5B1-Er-6lK"/>
                             </connections>
                         </segmentedControl>
                     </subviews>
-                    <color key="backgroundColor" red="0.1100249663" green="0.14831173419999999" blue="0.18872836230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.1052148715" green="0.14882487059999999" blue="0.19404089450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="9ff-sD-Cdj"/>
                         <constraint firstItem="RLx-z2-XGk" firstAttribute="centerX" secondItem="y2x-9C-kqW" secondAttribute="centerX" id="U2C-yd-zTX"/>
@@ -56,7 +56,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MuZ-VD-f4d">
                     <rect key="frame" x="0.0" y="101" width="1024" height="667"/>
-                    <color key="backgroundColor" red="0.12549552319999999" green="0.16820439700000001" blue="0.2174127102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.1052148715" green="0.14882487059999999" blue="0.19404089450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.21674785020000001" green="0.28670871260000003" blue="0.35843372340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -69,7 +69,7 @@
                 <constraint firstItem="y2x-9C-kqW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kyh-7S-kdY"/>
                 <constraint firstItem="MuZ-VD-f4d" firstAttribute="top" secondItem="y2x-9C-kqW" secondAttribute="bottom" constant="1" id="tGX-NW-EiZ"/>
             </constraints>
-            <point key="canvasLocation" x="177" y="150"/>
+            <point key="canvasLocation" x="-107" y="51"/>
         </view>
     </objects>
 </document>

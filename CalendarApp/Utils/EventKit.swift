@@ -50,15 +50,6 @@ class EventKit {
                     let nc = NotificationCenter.default
                     nc.post(name: Notification.Name("CalendarAuthorized"), object: nil)
                 } else {
-//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-//                        let  permissionView : Permission = Permission().fromNib(nibName: "permissionView", index: 0) as! Permission
-//                        let klc = KLCPopup.init(contentView: permissionView)
-//                        klc?.showType = .bounceInFromLeft
-//                        klc?.dismissType = .bounceOutToTop
-//                        klc?.maskType = .dimmed
-//                        klc?.shouldDismissOnBackgroundTouch = true
-//                        klc?.show()
-//                    }
                 }
         })
     }

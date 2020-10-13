@@ -87,7 +87,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.12549552319999999" green="0.16820439700000001" blue="0.2174127102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1052148715" green="0.14882487059999999" blue="0.19404089450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Qeq-LW-bXM" firstAttribute="leading" secondItem="ZpW-o4-Bx8" secondAttribute="leading" id="1Ws-fW-ZDO"/>
                             <constraint firstItem="jlE-Xl-Ty9" firstAttribute="top" secondItem="ZpW-o4-Bx8" secondAttribute="top" constant="20" symbolic="YES" id="3xb-mL-X01"/>
@@ -118,7 +118,7 @@
                 <outlet property="lbType" destination="ks6-jr-Z80" id="07N-UY-YiK"/>
                 <outlet property="viewTime" destination="jlE-Xl-Ty9" id="D0X-1y-vV4"/>
             </connections>
-            <point key="canvasLocation" x="146" y="-24"/>
+            <point key="canvasLocation" x="-648" y="30"/>
         </tableViewCell>
     </objects>
 </document>

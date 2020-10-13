@@ -9,7 +9,7 @@
 #ifndef Bridging_Header_h
 #define Bridging_Header_h
 //#import <SVProgressHUD/SVProgressHUD.h>
-//#import "HMSegmentedControl.h"
+#import "HMSegmentedControl.h"
 //#import "SVPullToRefresh.h"
 #import "KLCPopup.h"
 #import "UIView+UpdateAutoLayoutConstraints.h"
