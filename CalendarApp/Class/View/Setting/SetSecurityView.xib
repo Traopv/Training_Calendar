@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SetSecurityView" customModule="CalendarApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="784" height="834"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cài đặt mở khoá ứng dụng bằng vân tay, FaceID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEV-z2-idR">
+                    <rect key="frame" x="20" y="77" width="412" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.6162731051" green="0.67673593759999995" blue="0.73463481659999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTg-jM-zXw">
+                    <rect key="frame" x="20" y="125" width="744" height="75"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mở khoá ứng dụng bằng vân tay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIv-di-Iub">
+                            <rect key="frame" x="28" y="25.5" width="278.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIl-xf-sx4">
+                            <rect key="frame" x="683" y="22" width="51" height="31"/>
+                            <connections>
+                                <action selector="chooseSecurity:" destination="iN0-l3-epB" eventType="valueChanged" id="t7G-nv-qbK"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14133810999999999" green="0.2007659376" blue="0.2764627039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="jIv-di-Iub" firstAttribute="centerY" secondItem="UTg-jM-zXw" secondAttribute="centerY" id="89v-Kt-2xI"/>
+                        <constraint firstItem="IIl-xf-sx4" firstAttribute="centerY" secondItem="UTg-jM-zXw" secondAttribute="centerY" id="CX1-ap-eXJ"/>
+                        <constraint firstAttribute="height" constant="75" id="G8o-Wg-rkp"/>
+                        <constraint firstItem="jIv-di-Iub" firstAttribute="leading" secondItem="UTg-jM-zXw" secondAttribute="leading" constant="28" id="UNG-gf-VmR"/>
+                        <constraint firstAttribute="trailing" secondItem="IIl-xf-sx4" secondAttribute="trailing" constant="12" id="x3Z-QC-cC7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1051443145" green="0.14831489319999999" blue="0.19363936779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UTg-jM-zXw" firstAttribute="top" secondItem="qEV-z2-idR" secondAttribute="bottom" constant="24" id="HI7-RV-8QA"/>
+                <constraint firstItem="UTg-jM-zXw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="P4K-ph-OeK"/>
+                <constraint firstItem="qEV-z2-idR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Yhp-y8-UDC"/>
+                <constraint firstItem="qEV-z2-idR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="77" id="eRX-uM-LFm"/>
+                <constraint firstItem="UTg-jM-zXw" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="sku-6I-s9A"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="viewCell" destination="UTg-jM-zXw" id="E2L-t0-cwg"/>
+            </connections>
+            <point key="canvasLocation" x="-65" y="155"/>
+        </view>
+    </objects>
+</document>

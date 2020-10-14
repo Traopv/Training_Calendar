@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SetCalendarView" customModule="CalendarApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="784" height="834"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đồng bộ lịch, sự kiện cá nhân từ ứng dụng Lịch của điện thoại" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4h-kK-ahO">
+                    <rect key="frame" x="20" y="77" width="531" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.6162731051" green="0.67673593759999995" blue="0.73463481659999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kH2-VB-faA">
+                    <rect key="frame" x="20" y="125" width="744" height="150"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGn-tg-x5A">
+                            <rect key="frame" x="28" y="74.5" width="716" height="1"/>
+                            <color key="backgroundColor" red="0.2460311949" green="0.3372961283" blue="0.43267881870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="4XC-SI-eHM"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đồng  bộ lịch cá nhân" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHu-vn-evf">
+                            <rect key="frame" x="28" y="29" width="187" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày lễ, ngày tết" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh3-1H-jwQ">
+                            <rect key="frame" x="28" y="97" width="145" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GTL-f0-zsU">
+                            <rect key="frame" x="683" y="22" width="51" height="31"/>
+                            <connections>
+                                <action selector="asynPerCalendar:" destination="iN0-l3-epB" eventType="valueChanged" id="BRT-bt-Xe1"/>
+                            </connections>
+                        </switch>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTR-Dg-m9w">
+                            <rect key="frame" x="683" y="97" width="51" height="31"/>
+                            <connections>
+                                <action selector="chooseHoliday:" destination="iN0-l3-epB" eventType="valueChanged" id="eKd-fK-esL"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14133810999999999" green="0.2007659376" blue="0.2764627039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="GTL-f0-zsU" firstAttribute="top" secondItem="kH2-VB-faA" secondAttribute="top" constant="22" id="74R-o9-9bQ"/>
+                        <constraint firstItem="ZGn-tg-x5A" firstAttribute="leading" secondItem="kH2-VB-faA" secondAttribute="leading" constant="28" id="Cu8-F2-5Vk"/>
+                        <constraint firstAttribute="trailing" secondItem="ZGn-tg-x5A" secondAttribute="trailing" id="GRH-ZD-3rx"/>
+                        <constraint firstItem="SHu-vn-evf" firstAttribute="leading" secondItem="kH2-VB-faA" secondAttribute="leading" constant="28" id="JNm-jv-PLf"/>
+                        <constraint firstItem="ZGn-tg-x5A" firstAttribute="centerY" secondItem="kH2-VB-faA" secondAttribute="centerY" id="OFd-Y0-uVn"/>
+                        <constraint firstItem="Jh3-1H-jwQ" firstAttribute="leading" secondItem="kH2-VB-faA" secondAttribute="leading" constant="28" id="Plp-rI-orN"/>
+                        <constraint firstAttribute="trailing" secondItem="GTL-f0-zsU" secondAttribute="trailing" constant="12" id="QQY-bA-AWO"/>
+                        <constraint firstAttribute="trailing" secondItem="bTR-Dg-m9w" secondAttribute="trailing" constant="12" id="YSr-te-Ij8"/>
+                        <constraint firstAttribute="bottom" secondItem="bTR-Dg-m9w" secondAttribute="bottom" constant="22" id="aWU-Vf-5zl"/>
+                        <constraint firstAttribute="height" constant="150" id="gVq-mD-1Zl"/>
+                        <constraint firstItem="SHu-vn-evf" firstAttribute="top" secondItem="kH2-VB-faA" secondAttribute="top" constant="29" id="mjP-Rp-uNN"/>
+                        <constraint firstAttribute="bottom" secondItem="Jh3-1H-jwQ" secondAttribute="bottom" constant="29" id="niA-Iq-Aun"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1051443145" green="0.14831489319999999" blue="0.19363936779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kH2-VB-faA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="7gx-Ri-BZ1"/>
+                <constraint firstItem="l4h-kK-ahO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="77" id="Alx-oe-Bu8"/>
+                <constraint firstItem="l4h-kK-ahO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="LG9-Ns-Hcl"/>
+                <constraint firstItem="kH2-VB-faA" firstAttribute="top" secondItem="l4h-kK-ahO" secondAttribute="bottom" constant="24" id="hYJ-ge-Lir"/>
+                <constraint firstItem="kH2-VB-faA" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="u8G-44-HHZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="viewCell" destination="kH2-VB-faA" id="yZk-wE-RLC"/>
+            </connections>
+            <point key="canvasLocation" x="-289" y="23"/>
+        </view>
+    </objects>
+</document>

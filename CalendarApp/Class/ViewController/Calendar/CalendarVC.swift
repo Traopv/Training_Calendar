@@ -111,7 +111,7 @@ class CalendarVC: UIViewController {
     //MARK: Button function
     @IBAction func chooseCurrentDate(_ sender: Any) {
         DispatchQueue.main.async { [self] in
-            listMonth = [Date().addMonths(numberOfMonths: 3),
+            self.listMonth = [Date().addMonths(numberOfMonths: 3),
                                      Date(),
                                      Date().addMonths(numberOfMonths: 1),
                                      Date().addMonths(numberOfMonths: 2),

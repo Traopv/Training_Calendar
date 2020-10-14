@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SetNotifiView" customModule="CalendarApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="784" height="834"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cài đặt bật/tắt nhận thông báo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uog-rZ-rJE">
+                    <rect key="frame" x="20" y="77" width="265" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.6162731051" green="0.67673593759999995" blue="0.73463481659999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGf-oo-65d">
+                    <rect key="frame" x="20" y="125" width="744" height="75"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đồng  bộ lịch cá nhân" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlF-zO-PMk">
+                            <rect key="frame" x="28" y="25.5" width="187" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4R-Sq-C7i">
+                            <rect key="frame" x="683" y="22" width="51" height="31"/>
+                            <connections>
+                                <action selector="receivedNotifi:" destination="iN0-l3-epB" eventType="valueChanged" id="Sq4-N3-LLc"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14133810999999999" green="0.2007659376" blue="0.2764627039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="JlF-zO-PMk" firstAttribute="leading" secondItem="sGf-oo-65d" secondAttribute="leading" constant="28" id="434-CG-jk3"/>
+                        <constraint firstItem="JlF-zO-PMk" firstAttribute="centerY" secondItem="sGf-oo-65d" secondAttribute="centerY" id="IFk-Kg-4Sr"/>
+                        <constraint firstItem="S4R-Sq-C7i" firstAttribute="centerY" secondItem="sGf-oo-65d" secondAttribute="centerY" id="LUy-mw-yoe"/>
+                        <constraint firstAttribute="height" constant="75" id="PAm-z6-yXC"/>
+                        <constraint firstAttribute="trailing" secondItem="S4R-Sq-C7i" secondAttribute="trailing" constant="12" id="hyD-5d-ZS5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1051443145" green="0.14831489319999999" blue="0.19363936779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uog-rZ-rJE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="77" id="6eK-Qr-SNk"/>
+                <constraint firstItem="uog-rZ-rJE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="W7v-cn-GhW"/>
+                <constraint firstItem="sGf-oo-65d" firstAttribute="top" secondItem="uog-rZ-rJE" secondAttribute="bottom" constant="24" id="awh-m9-EEL"/>
+                <constraint firstItem="sGf-oo-65d" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="fYx-Gb-aZd"/>
+                <constraint firstItem="sGf-oo-65d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="mkH-Vf-7g4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="viewCell" destination="sGf-oo-65d" id="gNU-5H-96y"/>
+            </connections>
+            <point key="canvasLocation" x="626" y="41"/>
+        </view>
+    </objects>
+</document>

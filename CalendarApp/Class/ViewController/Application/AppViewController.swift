@@ -1,61 +1,53 @@
 //
-//  ListReportView.swift
+//  AppViewController.swift
 //  CalendarApp
 //
-//  Created by Apple on 10/13/20.
+//  Created by ELSAGA-MACOS on 10/14/20.
 //
 
 import UIKit
 
-class ListReportView: UIView {
+class AppViewController: UIViewController {
 
     @IBOutlet weak var myCollection: UICollectionView!
     
     var collectionViewFlowLayout : UICollectionViewFlowLayout!
-    var arrIcon = ["iconFile.png","iconFolder.png"]
-    var closurePushView: (() -> Void)?
+    var arrIcon = ["aiChat.png","netView.png","hop.png","cctv.png","file.png","qttudong.png"]
+    var arrTitle = ["AIChat","Netview","Họp","CCTV","Quản lý văn bản","Quan trứ tự động",]
     
-    func fromNib(nibName : String, index : Int! = 0) -> UIView {
-        let bundle = Bundle.main
-        let nib = UINib(nibName: nibName, bundle: bundle)
-        let nibView = nib.instantiate(withOwner: self, options: nil)[index] as! UIView
-        
-        return nibView
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        conFig()
     }
-    
-    //MARK:-
+ //MARK:-
     //MARK: config
     func conFig() {
-        myCollection.register(UINib.init(nibName: "CellReport", bundle: nil), forCellWithReuseIdentifier: "CellReport")
+        myCollection.register(UINib.init(nibName: "CellApp", bundle: nil), forCellWithReuseIdentifier: "CellApp")
     }
 }
 
 //MARK:-
-extension ListReportView: UICollectionViewDelegate,UICollectionViewDataSource {
+extension AppViewController: UICollectionViewDelegate,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 6
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellReport", for: indexPath) as! CellReport
-        let imageName = UIImage(named: arrIcon[0])
-        cell.imgFile?.image = imageName
-        if indexPath.row == 2 {
-            let imageName1 = UIImage(named: arrIcon[1])
-            cell.imgFile?.image = imageName1
-            cell.lbTitle.text = "Folder báo cáo"
-        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellApp", for: indexPath) as! CellApp
+        let imageName = UIImage(named: arrIcon[indexPath.row])
+        cell.imgCell?.image = imageName
+        cell.lbTitle.text = arrTitle[indexPath.row]
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row == 2{
-            closurePushView?()
-        }
-    }
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        if indexPath.row == 2{
+//            closurePushView?()
+//        }
+//    }
 }
 
 //MARK:-
-extension ListReportView: UICollectionViewDelegateFlowLayout {
+extension AppViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -63,7 +55,7 @@ extension ListReportView: UICollectionViewDelegateFlowLayout {
         let height: CGFloat = myCollection.bounds.height
         let numberOfItemInRow : CGFloat = 5
         let numberOfRow : CGFloat = 3
-        let iLineSpaing : CGFloat = 100
+        let iLineSpaing : CGFloat = 50
         let interItemSpacing : CGFloat = 50
         let iWidth = (width - (numberOfItemInRow - 1) * interItemSpacing) / numberOfItemInRow
         let iHeight = (height - (numberOfRow - 1) * iLineSpaing) / numberOfRow
@@ -87,7 +79,7 @@ extension ListReportView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 100
+        return 40
     }
 
     func collectionView(_ collectionView: UICollectionView,

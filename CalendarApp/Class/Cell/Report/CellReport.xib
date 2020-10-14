@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,17 +11,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellReport" id="gTV-IL-0wX" customClass="CellReport" customModule="CalendarApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="238" height="282"/>
+            <rect key="frame" x="0.0" y="0.0" width="238" height="245"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="238" height="282"/>
+                <rect key="frame" x="0.0" y="0.0" width="238" height="245"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconFile" translatesAutoresizingMaskIntoConstraints="NO" id="H42-oC-g8I">
-                        <rect key="frame" x="0.0" y="0.0" width="238" height="205"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconFile" translatesAutoresizingMaskIntoConstraints="NO" id="H42-oC-g8I">
+                        <rect key="frame" x="0.0" y="0.0" width="238" height="173"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Báo cáo tình hình thực hiển nhiệm vụ CP, TTCP, Lãnh đạo Bộ giao" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4S-Lm-Ohb">
-                        <rect key="frame" x="4" y="213" width="230" height="69"/>
+                        <rect key="frame" x="4" y="176" width="230" height="69"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="69" id="xGa-97-0uj"/>
                         </constraints>
@@ -31,23 +31,23 @@
                     </label>
                 </subviews>
             </view>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="H42-oC-g8I" secondAttribute="trailing" id="0RB-F7-RIw"/>
                 <constraint firstAttribute="bottom" secondItem="W4S-Lm-Ohb" secondAttribute="bottom" id="6Ds-7Q-mkc"/>
                 <constraint firstItem="H42-oC-g8I" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DHk-7O-5yK"/>
                 <constraint firstAttribute="trailing" secondItem="W4S-Lm-Ohb" secondAttribute="trailing" constant="4" id="HXs-oz-ZHP"/>
-                <constraint firstItem="W4S-Lm-Ohb" firstAttribute="top" secondItem="H42-oC-g8I" secondAttribute="bottom" constant="8" id="Naa-DE-7XQ"/>
+                <constraint firstItem="W4S-Lm-Ohb" firstAttribute="top" secondItem="H42-oC-g8I" secondAttribute="bottom" constant="3" id="Naa-DE-7XQ"/>
                 <constraint firstItem="H42-oC-g8I" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mwP-9e-XC5"/>
                 <constraint firstItem="W4S-Lm-Ohb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="qVw-bc-Yjw"/>
             </constraints>
-            <size key="customSize" width="251" height="331"/>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="251" height="294"/>
             <connections>
                 <outlet property="imgFile" destination="H42-oC-g8I" id="U74-p1-7k5"/>
                 <outlet property="lbTitle" destination="W4S-Lm-Ohb" id="gG0-o5-Ehl"/>
             </connections>
-            <point key="canvasLocation" x="-607.24637681159425" y="-3.3482142857142856"/>
+            <point key="canvasLocation" x="-1017" y="-67"/>
         </collectionViewCell>
     </objects>
     <resources>
