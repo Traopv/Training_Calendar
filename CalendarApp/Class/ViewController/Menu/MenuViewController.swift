@@ -21,6 +21,7 @@ class MenuViewController: UIViewController {
     var reportVC = ReportViewController.init()
     var appVC = AppViewController.init()
     var settingVC = SettingViewController.init()
+    var home = HomeVC.init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,8 @@ class MenuViewController: UIViewController {
         reportVC.view.frame = CGRect(x: 0, y: 0, width: viewContent.bounds.width, height: viewContent.bounds.height)
         appVC.view.frame = CGRect(x: 0, y: 0, width: viewContent.bounds.width, height: viewContent.bounds.height)
         settingVC.view.frame = CGRect(x: 0, y: 0, width: viewContent.bounds.width, height: viewContent.bounds.height)
+        home.view.frame = CGRect(x: 0, y: 0, width: viewContent.bounds.width, height: viewContent.bounds.height)
+        views.append(home.view)
         views.append(homeVC.view)
         views.append(notifiVC.view)
         views.append(reportVC.view)

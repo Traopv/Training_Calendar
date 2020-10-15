@@ -24,13 +24,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="61" height="834"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botainguyen 1" translatesAutoresizingMaskIntoConstraints="NO" id="BCi-Ow-USs">
-                            <rect key="frame" x="4" y="62" width="53" height="53"/>
+                            <rect key="frame" x="4" y="42" width="53" height="53"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="53" id="RIP-Ai-OhI"/>
                             </constraints>
                         </imageView>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="h3q-um-wzm">
-                            <rect key="frame" x="0.0" y="180" width="61" height="522"/>
+                            <rect key="frame" x="0.0" y="160" width="61" height="542"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CNZ-u1-q9h">
                                 <size key="itemSize" width="128" height="128"/>
@@ -49,7 +49,7 @@
                         <constraint firstAttribute="width" constant="61" id="4ld-hG-VQ9"/>
                         <constraint firstItem="BCi-Ow-USs" firstAttribute="leading" secondItem="G5N-Qv-RXf" secondAttribute="leading" constant="4" id="4p3-rL-fpQ"/>
                         <constraint firstAttribute="bottom" secondItem="h3q-um-wzm" secondAttribute="bottom" constant="132" id="82d-Yi-KfO"/>
-                        <constraint firstItem="BCi-Ow-USs" firstAttribute="top" secondItem="G5N-Qv-RXf" secondAttribute="top" constant="62" id="WqF-E8-NLB"/>
+                        <constraint firstItem="BCi-Ow-USs" firstAttribute="top" secondItem="G5N-Qv-RXf" secondAttribute="top" constant="42" id="WqF-E8-NLB"/>
                         <constraint firstItem="h3q-um-wzm" firstAttribute="top" secondItem="BCi-Ow-USs" secondAttribute="bottom" constant="65" id="bAf-5P-VTh"/>
                         <constraint firstAttribute="trailing" secondItem="h3q-um-wzm" secondAttribute="trailing" id="nRp-3e-tEE"/>
                         <constraint firstAttribute="trailing" secondItem="BCi-Ow-USs" secondAttribute="trailing" constant="4" id="oJd-Ax-XmC"/>

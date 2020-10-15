@@ -46,6 +46,7 @@ class CellCollectionViewCell: UICollectionViewCell {
     }
 }
 
+//MARK:-
 extension CellCollectionViewCell: UICollectionViewDelegate, UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

@@ -39,6 +39,24 @@
 		18AE1C22252B2AAE0059EC18 /* DayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AE1C20252B2AAE0059EC18 /* DayTableViewCell.xib */; };
 		18B0D976252DB2EA009608FD /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0D974252DB2EA009608FD /* DocumentCell.swift */; };
 		18B0D977252DB2EA009608FD /* DocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B0D975252DB2EA009608FD /* DocumentCell.xib */; };
+		18B4B5FC25382ED100739BC8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B5FA25382ED100739BC8 /* HomeVC.swift */; };
+		18B4B5FD25382ED100739BC8 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4B5FB25382ED100739BC8 /* HomeVC.xib */; };
+		18B4B60325383A7900739BC8 /* HomeTbCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B60125383A7900739BC8 /* HomeTbCell1.swift */; };
+		18B4B60425383A7900739BC8 /* HomeTbCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4B60225383A7900739BC8 /* HomeTbCell1.xib */; };
+		18B4B60925383D6800739BC8 /* HomeCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B60725383D6800739BC8 /* HomeCell1.swift */; };
+		18B4B60A25383D6800739BC8 /* HomeCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4B60825383D6800739BC8 /* HomeCell1.xib */; };
+		18B4B60E25383F0400739BC8 /* HomeCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B60C25383F0400739BC8 /* HomeCell2.swift */; };
+		18B4B60F25383F0400739BC8 /* HomeCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4B60D25383F0400739BC8 /* HomeCell2.xib */; };
+		18B4B614253854C900739BC8 /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B612253854C900739BC8 /* HomeCollectionCell.swift */; };
+		18B4B615253854C900739BC8 /* HomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4B613253854C900739BC8 /* HomeCollectionCell.xib */; };
+		18B4B61A2538560E00739BC8 /* HomeView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B6192538560E00739BC8 /* HomeView1.swift */; };
+		18B4B61E2538561800739BC8 /* HomeView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4B61D2538561800739BC8 /* HomeView1.xib */; };
+		18B4B6212538562900739BC8 /* HomeView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4B6202538562900739BC8 /* HomeView2.xib */; };
+		18B4B6242538563700739BC8 /* HomeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B6232538563700739BC8 /* HomeView2.swift */; };
+		18B4B6282538564400739BC8 /* HomeView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B6272538564400739BC8 /* HomeView3.swift */; };
+		18B4B62B2538564F00739BC8 /* HomeView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4B62A2538564F00739BC8 /* HomeView4.swift */; };
+		18B4B62E2538565A00739BC8 /* HomeView3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4B62D2538565A00739BC8 /* HomeView3.xib */; };
+		18B4B6312538566B00739BC8 /* HomeView4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4B6302538566B00739BC8 /* HomeView4.xib */; };
 		18BA4D6925245FD700D3E357 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BA4D6725245FD700D3E357 /* HomeViewController.xib */; };
 		18BA4D6A25245FD700D3E357 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA4D6825245FD700D3E357 /* HomeViewController.swift */; };
 		18BA4D702524602C00D3E357 /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA4D6E2524602C00D3E357 /* MonthViewController.swift */; };
@@ -139,6 +157,24 @@
 		18AE1C20252B2AAE0059EC18 /* DayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayTableViewCell.xib; sourceTree = "<group>"; };
 		18B0D974252DB2EA009608FD /* DocumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
 		18B0D975252DB2EA009608FD /* DocumentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentCell.xib; sourceTree = "<group>"; };
+		18B4B5FA25382ED100739BC8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		18B4B5FB25382ED100739BC8 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		18B4B60125383A7900739BC8 /* HomeTbCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTbCell1.swift; sourceTree = "<group>"; };
+		18B4B60225383A7900739BC8 /* HomeTbCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTbCell1.xib; sourceTree = "<group>"; };
+		18B4B60725383D6800739BC8 /* HomeCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell1.swift; sourceTree = "<group>"; };
+		18B4B60825383D6800739BC8 /* HomeCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell1.xib; sourceTree = "<group>"; };
+		18B4B60C25383F0400739BC8 /* HomeCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell2.swift; sourceTree = "<group>"; };
+		18B4B60D25383F0400739BC8 /* HomeCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell2.xib; sourceTree = "<group>"; };
+		18B4B612253854C900739BC8 /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		18B4B613253854C900739BC8 /* HomeCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionCell.xib; sourceTree = "<group>"; };
+		18B4B6192538560E00739BC8 /* HomeView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView1.swift; sourceTree = "<group>"; };
+		18B4B61D2538561800739BC8 /* HomeView1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView1.xib; sourceTree = "<group>"; };
+		18B4B6202538562900739BC8 /* HomeView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView2.xib; sourceTree = "<group>"; };
+		18B4B6232538563700739BC8 /* HomeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView2.swift; sourceTree = "<group>"; };
+		18B4B6272538564400739BC8 /* HomeView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView3.swift; sourceTree = "<group>"; };
+		18B4B62A2538564F00739BC8 /* HomeView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView4.swift; sourceTree = "<group>"; };
+		18B4B62D2538565A00739BC8 /* HomeView3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView3.xib; sourceTree = "<group>"; };
+		18B4B6302538566B00739BC8 /* HomeView4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView4.xib; sourceTree = "<group>"; };
 		18BA4D6725245FD700D3E357 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		18BA4D6825245FD700D3E357 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18BA4D6E2524602C00D3E357 /* MonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
@@ -365,6 +401,7 @@
 		1860CC58252ADB9B006DD73F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18B4B618253855F400739BC8 /* Home */,
 				9B90CEFC2536F9F9003AED04 /* Setting */,
 				1854687325358C580093AAA1 /* Report */,
 				182A81E2252C165A0011D7E9 /* ViewMonth */,
@@ -393,13 +430,68 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
-		18BA4D6625245FD700D3E357 /* Home */ = {
+		18B4B5F925382EB600739BC8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18B4B5FA25382ED100739BC8 /* HomeVC.swift */,
+				18B4B5FB25382ED100739BC8 /* HomeVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18B4B5FF25383A3E00739BC8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18B4B611253854A900739BC8 /* Collection */,
+				18B4B60025383A4500739BC8 /* TableCell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18B4B60025383A4500739BC8 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				18B4B60125383A7900739BC8 /* HomeTbCell1.swift */,
+				18B4B60225383A7900739BC8 /* HomeTbCell1.xib */,
+				18B4B60725383D6800739BC8 /* HomeCell1.swift */,
+				18B4B60825383D6800739BC8 /* HomeCell1.xib */,
+				18B4B60C25383F0400739BC8 /* HomeCell2.swift */,
+				18B4B60D25383F0400739BC8 /* HomeCell2.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		18B4B611253854A900739BC8 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				18B4B612253854C900739BC8 /* HomeCollectionCell.swift */,
+				18B4B613253854C900739BC8 /* HomeCollectionCell.xib */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		18B4B618253855F400739BC8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18B4B6192538560E00739BC8 /* HomeView1.swift */,
+				18B4B61D2538561800739BC8 /* HomeView1.xib */,
+				18B4B6232538563700739BC8 /* HomeView2.swift */,
+				18B4B6202538562900739BC8 /* HomeView2.xib */,
+				18B4B6272538564400739BC8 /* HomeView3.swift */,
+				18B4B62D2538565A00739BC8 /* HomeView3.xib */,
+				18B4B62A2538564F00739BC8 /* HomeView4.swift */,
+				18B4B6302538566B00739BC8 /* HomeView4.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18BA4D6625245FD700D3E357 /* Calen */ = {
 			isa = PBXGroup;
 			children = (
 				18BA4D6825245FD700D3E357 /* HomeViewController.swift */,
 				18BA4D6725245FD700D3E357 /* HomeViewController.xib */,
 			);
-			path = Home;
+			path = Calen;
 			sourceTree = "<group>";
 		};
 		18BA4D6D2524600C00D3E357 /* Month */ = {
@@ -423,6 +515,7 @@
 		18BA4D892524690D00D3E357 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				18B4B5FF25383A3E00739BC8 /* Home */,
 				9B90CEEA2536ECDA003AED04 /* Setting */,
 				9B90CEE02536DF54003AED04 /* Application */,
 				1854688B2535A4750093AAA1 /* Notification */,
@@ -557,6 +650,7 @@
 		18F0EA0425219AC10031DB29 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18B4B5F925382EB600739BC8 /* Home */,
 				9B90CEE52536EC13003AED04 /* Setting */,
 				9B90CEDB2536DC71003AED04 /* Application */,
 				18D42D8A253569E000819EB4 /* Report */,
@@ -565,7 +659,7 @@
 				1860CC42252AB7D5006DD73F /* Calendar */,
 				18BA4D81252468D900D3E357 /* Day */,
 				18BA4D6D2524600C00D3E357 /* Month */,
-				18BA4D6625245FD700D3E357 /* Home */,
+				18BA4D6625245FD700D3E357 /* Calen */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -754,6 +848,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B4B60425383A7900739BC8 /* HomeTbCell1.xib in Resources */,
 				9B088677253714C6005D0390 /* SetNotifiView.xib in Resources */,
 				18B0D977252DB2EA009608FD /* DocumentCell.xib in Resources */,
 				9B90CEDF2536DC93003AED04 /* AppViewController.xib in Resources */,
@@ -765,9 +860,12 @@
 				18BA4D84252468D900D3E357 /* DayViewController.xib in Resources */,
 				182A4071253048740045CB28 /* MonthTBCell.xib in Resources */,
 				18D42D822535610D00819EB4 /* CellMenu.xib in Resources */,
+				18B4B6312538566B00739BC8 /* HomeView4.xib in Resources */,
 				18BA4D902524690D00D3E357 /* CellCollectionViewCell.xib in Resources */,
 				18A5B3A125305042008E8126 /* EventMonth.xib in Resources */,
 				18D42D7C25355DF200819EB4 /* MenuViewController.xib in Resources */,
+				18B4B60A25383D6800739BC8 /* HomeCell1.xib in Resources */,
+				18B4B6212538562900739BC8 /* HomeView2.xib in Resources */,
 				18D42D882535666F00819EB4 /* NotifiViewController.xib in Resources */,
 				18546887253595BA0093AAA1 /* ListReportViewController.xib in Resources */,
 				18BA4D922524690D00D3E357 /* CellDate.xib in Resources */,
@@ -776,11 +874,15 @@
 				9B08867D25371662005D0390 /* SetSecurityView.xib in Resources */,
 				9B6A3D67252E2008005A3367 /* EventCell2.xib in Resources */,
 				18F0E9F825219A980031DB29 /* Assets.xcassets in Resources */,
+				18B4B62E2538565A00739BC8 /* HomeView3.xib in Resources */,
+				18B4B5FD25382ED100739BC8 /* HomeVC.xib in Resources */,
+				18B4B60F25383F0400739BC8 /* HomeCell2.xib in Resources */,
 				18AE1C22252B2AAE0059EC18 /* DayTableViewCell.xib in Resources */,
 				18F0E9F625219A960031DB29 /* Main.storyboard in Resources */,
 				18D42D8E253569F600819EB4 /* ReportViewController.xib in Resources */,
 				9B90CEFB2536ED7E003AED04 /* CellSetting4.xib in Resources */,
 				9B90CEF72536ED73003AED04 /* CellSetting3.xib in Resources */,
+				18B4B61E2538561800739BC8 /* HomeView1.xib in Resources */,
 				9B90CEE92536EC27003AED04 /* SettingViewController.xib in Resources */,
 				9B90CF052536FDC2003AED04 /* ProfileCell.xib in Resources */,
 				1854687925358C7E0093AAA1 /* ListReportView.xib in Resources */,
@@ -795,6 +897,7 @@
 				18BA4D712524602C00D3E357 /* MonthViewController.xib in Resources */,
 				1860CC4E252ACFCC006DD73F /* DayCell.xib in Resources */,
 				9B90CF002536FA48003AED04 /* ProfileView.xib in Resources */,
+				18B4B615253854C900739BC8 /* HomeCollectionCell.xib in Resources */,
 				1854689C2535AD930093AAA1 /* CellDetailNotifi2.xib in Resources */,
 				188DA86D252EB4AA008A63C0 /* PersonCell.xib in Resources */,
 				18BA4D6925245FD700D3E357 /* HomeViewController.xib in Resources */,
@@ -816,11 +919,14 @@
 				9B90CEE82536EC27003AED04 /* SettingViewController.swift in Sources */,
 				9B90CF042536FDC2003AED04 /* ProfileCell.swift in Sources */,
 				9B08867B25371657005D0390 /* SetSecurityView.swift in Sources */,
+				18B4B60325383A7900739BC8 /* HomeTbCell1.swift in Sources */,
 				18BA4D912524690D00D3E357 /* CellDate.swift in Sources */,
 				9B6A3D6A252E2062005A3367 /* EventCell3.swift in Sources */,
 				9B90CEF62536ED73003AED04 /* CellSetting3.swift in Sources */,
 				9B90CEE32536DF71003AED04 /* CellApp.swift in Sources */,
+				18B4B60E25383F0400739BC8 /* HomeCell2.swift in Sources */,
 				182A81EB252C17280011D7E9 /* CellDetailMonth.swift in Sources */,
+				18B4B62B2538564F00739BC8 /* HomeView4.swift in Sources */,
 				18F0E9F325219A960031DB29 /* ViewController.swift in Sources */,
 				9B90CEDE2536DC93003AED04 /* AppViewController.swift in Sources */,
 				18B0D976252DB2EA009608FD /* DocumentCell.swift in Sources */,
@@ -831,10 +937,13 @@
 				9B088679253715AF005D0390 /* SetNotifiView.swift in Sources */,
 				182A81E6252C165A0011D7E9 /* DetailMonth.swift in Sources */,
 				9B6A3D66252E2008005A3367 /* EventCell2.swift in Sources */,
+				18B4B614253854C900739BC8 /* HomeCollectionCell.swift in Sources */,
+				18B4B6242538563700739BC8 /* HomeView2.swift in Sources */,
 				18F0EA1425219C5C0031DB29 /* ExtensionDate.swift in Sources */,
 				188DA86C252EB4AA008A63C0 /* PersonCell.swift in Sources */,
 				18A5B3A42530504F008E8126 /* EventMonth.swift in Sources */,
 				18F0EA1225219C5C0031DB29 /* ExtensionCalendar.swift in Sources */,
+				18B4B60925383D6800739BC8 /* HomeCell1.swift in Sources */,
 				18F0EA1525219C5C0031DB29 /* Utils.swift in Sources */,
 				18EF12FA252D63750052C317 /* UIView+UpdateAutoLayoutConstraints.m in Sources */,
 				1860CC4D252ACFCC006DD73F /* DayCell.swift in Sources */,
@@ -847,10 +956,12 @@
 				1854688F2535A49A0093AAA1 /* ListNotifiCell.swift in Sources */,
 				18D42D8D253569F600819EB4 /* ReportViewController.swift in Sources */,
 				18F0E9EF25219A960031DB29 /* AppDelegate.swift in Sources */,
+				18B4B61A2538560E00739BC8 /* HomeView1.swift in Sources */,
 				18AE1C21252B2AAE0059EC18 /* DayTableViewCell.swift in Sources */,
 				18BA4D85252468D900D3E357 /* DayViewController.swift in Sources */,
 				1854687525358C750093AAA1 /* ListReportView.swift in Sources */,
 				185468A02535ADA00093AAA1 /* CellDetailNotifi3.swift in Sources */,
+				18B4B6282538564400739BC8 /* HomeView3.swift in Sources */,
 				185468962535AD870093AAA1 /* CellDetailNotifi1.swift in Sources */,
 				9B90CEFE2536FA3F003AED04 /* ProfileView.swift in Sources */,
 				9B90CEFA2536ED7E003AED04 /* CellSetting4.swift in Sources */,
@@ -858,6 +969,7 @@
 				1854689B2535AD930093AAA1 /* CellDetailNotifi2.swift in Sources */,
 				1860CC45252AB7E5006DD73F /* CalendarVC.swift in Sources */,
 				18546886253595BA0093AAA1 /* ListReportViewController.swift in Sources */,
+				18B4B5FC25382ED100739BC8 /* HomeVC.swift in Sources */,
 				9B90CEF22536ED15003AED04 /* CellSetting2.swift in Sources */,
 				18BA4D702524602C00D3E357 /* MonthViewController.swift in Sources */,
 			);
@@ -1016,7 +1128,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = demo.abc.CalendarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Volumes/DATA/Traopv/Training_Calendar/CalendarApp/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/ULife/Training_Calendar/CalendarApp/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1037,7 +1149,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = demo.abc.CalendarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Volumes/DATA/Traopv/Training_Calendar/CalendarApp/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/ULife/Training_Calendar/CalendarApp/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

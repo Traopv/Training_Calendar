@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeView2" customModule="CalendarApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="374"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cah_ly_sang_7 2" translatesAutoresizingMaskIntoConstraints="NO" id="Po5-18-cek">
+                    <rect key="frame" x="0.0" y="0.0" width="368" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="djc-jL-wn8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Không có ca mắc COVID-19, từ 0 giờ ngày 7/9, máy bay, tàu lửa, ô tô đi, đến Đà Nẵng hoạt động trở lại" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMu-ek-7vF">
+                    <rect key="frame" x="9" y="221" width="350" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.95624560120000002" green="0.95940488580000005" blue="0.97001248600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bản tin sáng ngày 7/9 của Ban Chỉ đạo Quốc gia phòng chống dịch COVID-19 cho biết không có ca mắc mới COVID-19 được ghi nhận." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ku6-di-1Oy">
+                    <rect key="frame" x="9" y="257.5" width="350" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.43527090550000003" green="0.51177728180000004" blue="0.58863407369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfg-ot-fpd">
+                    <rect key="frame" x="0.0" y="313.5" width="368" height="1"/>
+                    <color key="backgroundColor" red="0.27565410730000001" green="0.37178331609999998" blue="0.46552073960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Qfg-l8-RPl"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="119883039_1466202000434855_8417377087003961941_o" translatesAutoresizingMaskIntoConstraints="NO" id="k9F-AM-0dW">
+                    <rect key="frame" x="9" y="322.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="bEe-xe-vqf"/>
+                        <constraint firstAttribute="height" constant="40" id="rCw-DB-yL4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Không có ca mắc COVIS-19, từ 0 giờ ngày 7/9, máy bay, tàu lửa, ô tô đi, đến Đà Nẵng h..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fe6-Ub-n6N">
+                    <rect key="frame" x="58" y="327.5" width="301" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.95624560120000002" green="0.95940488580000005" blue="0.97001248600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.21674785020000001" green="0.28670871260000003" blue="0.35843372340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Po5-18-cek" secondAttribute="trailing" id="1cu-Rj-YiE"/>
+                <constraint firstItem="ku6-di-1Oy" firstAttribute="top" secondItem="iMu-ek-7vF" secondAttribute="bottom" constant="3" id="3hS-j5-ZzT"/>
+                <constraint firstItem="Po5-18-cek" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9zt-er-J8D"/>
+                <constraint firstItem="k9F-AM-0dW" firstAttribute="top" secondItem="Dfg-ot-fpd" secondAttribute="bottom" constant="8" id="Dwy-Uq-0NM"/>
+                <constraint firstItem="iMu-ek-7vF" firstAttribute="top" secondItem="Po5-18-cek" secondAttribute="bottom" constant="5" id="H1b-DF-Ctf"/>
+                <constraint firstItem="fe6-Ub-n6N" firstAttribute="top" secondItem="Dfg-ot-fpd" secondAttribute="bottom" constant="13" id="PF8-6h-Qk6"/>
+                <constraint firstAttribute="trailing" secondItem="ku6-di-1Oy" secondAttribute="trailing" constant="9" id="VIl-kT-NHx"/>
+                <constraint firstAttribute="trailing" secondItem="iMu-ek-7vF" secondAttribute="trailing" constant="9" id="XD3-kj-vhe"/>
+                <constraint firstAttribute="trailing" secondItem="fe6-Ub-n6N" secondAttribute="trailing" constant="9" id="Xxn-x9-179"/>
+                <constraint firstAttribute="trailing" secondItem="Dfg-ot-fpd" secondAttribute="trailing" id="ZJB-sb-HqJ"/>
+                <constraint firstItem="Po5-18-cek" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aoS-9n-R91"/>
+                <constraint firstItem="fe6-Ub-n6N" firstAttribute="leading" secondItem="k9F-AM-0dW" secondAttribute="trailing" constant="9" id="cec-pL-jy2"/>
+                <constraint firstItem="k9F-AM-0dW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="dYB-88-gbi"/>
+                <constraint firstItem="Dfg-ot-fpd" firstAttribute="top" secondItem="ku6-di-1Oy" secondAttribute="bottom" constant="9" id="fyR-6N-ful"/>
+                <constraint firstItem="iMu-ek-7vF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="nma-5O-XYC"/>
+                <constraint firstItem="Dfg-ot-fpd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="siE-4A-lYO"/>
+                <constraint firstItem="ku6-di-1Oy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="tRD-4u-MQo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="21.739130434782609" y="76.339285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="119883039_1466202000434855_8417377087003961941_o" width="1080" height="1080"/>
+        <image name="cah_ly_sang_7 2" width="368" height="217"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="HomeCell1" customModule="CalendarApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="311" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfe-Un-fV1">
+                        <rect key="frame" x="0.0" y="0.0" width="311" height="68"/>
+                        <color key="backgroundColor" red="0.3345046639" green="0.51311999559999999" blue="0.71332216260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="1E8-LQ-5bS"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconClockHome" translatesAutoresizingMaskIntoConstraints="NO" id="nYX-9N-VCD">
+                        <rect key="frame" x="15" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="9BQ-gY-M3b"/>
+                            <constraint firstAttribute="width" constant="24" id="F3e-uw-BCl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbs-mf-PBu">
+                        <rect key="frame" x="10" y="44" width="34.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.92493361230000004" green="0.92508530619999996" blue="0.92490136619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Họp về ứng  dụng Họp về ứng  dụng Họp về ứng  dụng Họp " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St3-Bu-zfo">
+                        <rect key="frame" x="55" y="16" width="245" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.92493361230000004" green="0.92508530619999996" blue="0.92490136619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="nYX-9N-VCD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="4pH-ov-Rob"/>
+                    <constraint firstItem="Mbs-mf-PBu" firstAttribute="top" secondItem="nYX-9N-VCD" secondAttribute="bottom" constant="10" id="7oV-Av-5GJ"/>
+                    <constraint firstItem="St3-Bu-zfo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="7py-hh-Asd"/>
+                    <constraint firstItem="St3-Bu-zfo" firstAttribute="leading" secondItem="nYX-9N-VCD" secondAttribute="trailing" constant="16" id="GHq-Is-yUo"/>
+                    <constraint firstAttribute="trailing" secondItem="St3-Bu-zfo" secondAttribute="trailing" constant="11" id="GJf-gZ-u6D"/>
+                    <constraint firstItem="nYX-9N-VCD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KZp-bl-XzJ"/>
+                    <constraint firstItem="Lfe-Un-fV1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hRJ-Ct-Xx3"/>
+                    <constraint firstItem="Lfe-Un-fV1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qLg-5c-MTn"/>
+                    <constraint firstAttribute="trailing" secondItem="Lfe-Un-fV1" secondAttribute="trailing" id="sKl-tx-DzQ"/>
+                    <constraint firstItem="Mbs-mf-PBu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xRT-hQ-xIU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.21674785020000001" green="0.28670871260000003" blue="0.35843372340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="viewCell" destination="Lfe-Un-fV1" id="vOK-Sf-rXE"/>
+            </connections>
+            <point key="canvasLocation" x="-25" y="-11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconClockHome" width="24" height="24"/>
+    </resources>
+</document>
